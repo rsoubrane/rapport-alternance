@@ -1,0 +1,66 @@
+.view-container {
+	height: 100%;
+	width: 100vw;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+
+	.container-image {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.container-products {
+			display: inline-flex;
+		}
+
+		img {
+			width: 20px;
+		}
+	}
+}
+
+#tabs-menu {
+	.nav-item {
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		border-left: 3px solid white;
+		border-radius: 0;
+		user-select: none;
+
+		.active {
+			background: transparent;
+			&:after {
+				display: block;
+				clear: both;
+				content: "";
+				position: relative;
+				width: 50%;
+				border-bottom: 3px solid #e2000f;
+				margin: 0 auto;
+			}
+		}
+
+		a {
+			cursor: pointer;
+			color: white;
+		}
+		&:first-child {
+			border-left: 0px solid white;
+		}
+	}
+}
+
+.modal-dialog {
+	top: 20%;
+
+	.modal-content {
+		color: #333;
+
+		.modal-title {
+			font-weight: bold !important;
+		}
+	}
+}

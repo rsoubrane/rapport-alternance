@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?8dguz7');
+  src:  url('../../fonts/icomoon.eot?8dguz7#iefix') format('embedded-opentype'),
+  url('../../fonts/icomoon.ttf?8dguz7') format('truetype'),
+  url('../../fonts/icomoon.woff?8dguz7') format('woff'),
+  url('../../fonts/icomoon.svg?8dguz7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spray:before {
+  content: "\e90e";
+}
+.icon-bags:before {
+  content: "\e90c";
+}
+.icon-bucket:before {
+  content: "\e90d";
+}
+.icon-exchanging:before {
+  content: "\e903";
+}
+.icon-mask:before {
+  content: "\e904";
+}
+.icon-gel:before {
+  content: "\e905";
+}
+.icon-interface:before {
+  content: "\e907";
+}
+.icon-wipes:before {
+  content: "\e908";
+}
+.icon-paper-towel:before {
+  content: "\e909";
+}
+.icon-gloves:before {
+  content: "\e90a";
+}
+.icon-soap:before {
+  content: "\e90b";
+}
+.icon-accept:before {
+  content: "\e901";
+}
+.icon-quit:before {
+  content: "\e902";
+}
+.icon-rocket:before {
+  content: "\e900";
+}
+.icon-zelda:before {
+  content: "\e906";
+}

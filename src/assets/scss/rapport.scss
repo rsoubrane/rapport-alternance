@@ -1,0 +1,37 @@
+//Custom
+@import "custom/variables";
+@import "custom/icomoon";
+@import "custom/buttons";
+@import "custom/utils";
+
+//Plugins
+@import "plugins/plugin-react-datetime";
+
+// Views
+@import "views/login";
+@import "views/home";
+@import "views/inputs";
+
+// Components
+@import "components/loaders";
+@import "components/notifications";
+@import "components/navbar";
+@import "components/cards";
+@import "components/header";
+@import "components/buttons";
+
+.sub_menu {
+	button {
+		border-radius: 30px;
+		&.btn-primary {
+			background: #ff3232;
+			border: 2px solid #ff3232;
+		}
+
+		&.btn-secondary {
+			background: transparent;
+			color: black;
+			border: 2px solid #ff3232;
+		}
+	}
+}

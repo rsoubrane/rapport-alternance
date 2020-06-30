@@ -1,0 +1,146 @@
+.block-product {
+	border: 2px solid black;
+	text-align: center;
+	padding: 30px;
+	margin: 30px 15px;
+	border-radius: 30px;
+	background: white;
+	h5 {
+		font-size: 30px;
+		color: black !important;
+		i {
+			margin-right: 20px;
+		}
+	}
+
+	h6 {
+		font-size: 15px;
+		text-align: center;
+		color: #545454 !important;
+		margin: 10px 0px 0px 0px;
+	}
+
+	.subtitle {
+		color: white;
+		padding: 5px 15px;
+		font-weight: bold;
+		background: #989898;
+		margin-top: 14px;
+		border-radius: 30px;
+		display: inline-block;
+	}
+
+	&.error {
+		border: 2px solid red;
+	}
+}
+
+.block-product-output {
+	border: 2px solid black;
+	text-align: center;
+	margin: 50px 15px;
+	border-radius: 30px;
+	background: white;
+
+	&.selected {
+		border: 5px solid green;
+	}
+
+	button {
+		padding: 30px;
+	}
+
+	h5 {
+		font-size: 40px;
+		color: black !important;
+
+		i {
+			margin-right: 20px;
+		}
+	}
+
+	h6 {
+		font-size: 15px;
+		text-align: center;
+		color: #545454 !important;
+		margin: 10px 0px 0px 0px;
+	}
+
+	.subtitle {
+		color: white;
+		padding: 5px 15px;
+		font-weight: bold;
+		margin-top: 14px;
+		border-radius: 30px;
+		display: inline-block;
+
+		&.red {
+			background: red;
+		}
+		&.blue {
+			background: $blue;
+		}
+	}
+
+	&.error {
+		border: 2px solid red;
+	}
+}
+
+.number_picker {
+	margin-top: 30px;
+
+	.input-group {
+		display: inline-flex !important;
+		width: auto;
+	}
+
+	.form-control {
+		border-radius: 30px !important;
+		height: 50px;
+		width: 110px !important;
+		flex: inherit;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		z-index: 10;
+		border: 3px solid #a0a0a0;
+
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		@media (max-width: 1200px) {
+			.form-control {
+				width: 90px;
+			}
+		}
+	}
+
+	.btn-left {
+		height: 30px;
+		margin-top: 10px;
+		margin-right: -20px;
+		z-index: 2;
+		border-radius: 20px;
+		width: 60px;
+		line-height: 20px;
+		font-weight: bold;
+		font-size: 25px;
+		padding: 0 15px 0 0;
+	}
+
+	.btn-right {
+		height: 30px;
+		margin-top: 10px;
+		margin-left: -20px;
+		z-index: 2;
+		border-radius: 20px;
+		width: 60px;
+		line-height: 20px;
+		font-weight: bold;
+		font-size: 25px;
+		padding: 0 0 0 15px;
+	}
+}
