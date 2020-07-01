@@ -4,7 +4,7 @@ export default function Testimonials() {
 	return (
 		<div className='row'>
 			<div className='col-xs-12 col-sm-12 '>
-				<div id='col_inner_id-5efb526b045ba' className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
+				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 					<div className='fw-divider-space' style={{ paddingTop: "20px" }}></div>
 
 					<div className='block-title'>
@@ -12,7 +12,6 @@ export default function Testimonials() {
 					</div>
 
 					<div
-						id='testimonials_f297ab5bd43f90472fa9bd5a896eb14a'
 						className='testimonials owl-carousel owl-loaded owl-drag'
 						data-mobile-items='1'
 						data-tablet-items='2'

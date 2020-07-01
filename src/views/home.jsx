@@ -24,7 +24,7 @@ export default function PageHome({ returnPage }) {
 
 								<div className='col-sm-12 col-md-6 col-lg-6'>
 									<div className='home-text'>
-										<h1>Développeur Web - Free</h1>
+										<h1>Rapport Alternance</h1>
 										<p>
 											Ce site a pour vocation de faire un retour d'expérience de de mon année
 											d'alternance chez Free ainsi que de vous présenter mon parcours !
