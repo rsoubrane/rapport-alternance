@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 
 //Components
 import SplashScreen from "../components/Loaders/SplashScreen";
-import Header from "../components/Header";
+import Header from "../components/Navbar";
 import Footer from "../components/Footer";
 
 //Redux
@@ -24,6 +24,7 @@ import PageBilan from "../views/free/bilan";
 import PageTestimonials from "../views/free/testimonials";
 
 //Styles
+import "./Variables.scss";
 import "./Admin.scss";
 
 class Admin extends Component {
@@ -86,7 +87,7 @@ class Admin extends Component {
 								<div id='main' className='site-main'>
 									<div id='main-content' className='single-page-content'>
 										<div id='primary' className='content-area'>
-											{this.switchPage()}
+											<div className='fw-container'>{this.switchPage()}</div>
 										</div>
 									</div>
 								</div>

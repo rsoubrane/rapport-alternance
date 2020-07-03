@@ -1,18 +1,15 @@
 import React from "react";
+
+//Reactstrap Components
 import { Row } from "reactstrap";
+
+//Components
+import BlockTitle from "./BlockTitle";
 
 export default function FunFacts() {
 	return (
 		<>
-			<Row>
-				<div className='col-xs-12 col-sm-12 '>
-					<div id='col_inner_id-5efb526b04d68' className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-						<div className='block-title'>
-							<h2>Fun Facts</h2>
-						</div>
-					</div>
-				</div>
-			</Row>
+			<BlockTitle title='Fun Facts' />
 
 			<Row>
 				<div className=' col-xs-12 col-sm-3 '>
@@ -30,7 +27,7 @@ export default function FunFacts() {
 					<div id='col_inner_id-5efb526b05216' className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 						<div className='lm-info-block gray-default'>
 							<i className='linecons linecons-clock'></i>
-							<h4>Heure de travail</h4>
+							<h4>Heures de travail</h4>
 							<span className='lm-info-block-value'>1,350</span>
 							<span className='lm-info-block-text'></span>
 						</div>
@@ -42,7 +39,7 @@ export default function FunFacts() {
 						<div className='lm-info-block gray-default'>
 							<i className='linecons linecons-star'></i>
 							<h4>Projets</h4>
-							<span className='lm-info-block-value'>4</span>
+							<span className='lm-info-block-value'>3</span>
 							<span className='lm-info-block-text'></span>
 						</div>
 					</div>
@@ -59,6 +56,8 @@ export default function FunFacts() {
 					</div>
 				</div>
 			</Row>
+
+			<div className='fw-divider-space' style={{ paddingTop: "20px" }}></div>
 		</>
 	);
 }

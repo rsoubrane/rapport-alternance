@@ -9,31 +9,23 @@ import FunFacts from "../components/FunFacts";
 import "./about.scss";
 import Testimonials from "../components/Testimonials";
 import Clients from "../components/Projects";
-import Presentation from "../components/Presentation";
+import Presentation from "../components/Abilities";
 import Header1 from "../components/Header1";
 import Header2 from "../components/Header2";
 import Header from "../components/Header";
+import Summary from "../components/Summary";
 
 export default function PageAbout() {
 	return (
-		<div id='main-content' className='single-page-content'>
-			<div id='primary' className='content-area'>
-				<div id='content' className='page-content site-content single-post' role='main'>
-					<article id='post-164' className='post-164 page type-page status-publish hentry'>
-						<div className='entry-content'>
-							<div className='fw-page-builder-content'>
-								<section className='fw-main-row'>
-									<Header />
-								</section>
-
-								<Presentation />
-								<Clients />
-								<FunFacts />
-							</div>
-						</div>
-					</article>
+		<article className='page type-page'>
+			<div className='entry-content'>
+				<div className='fw-page-builder-content'>
+					<Header />
+					<Summary />
+					<Clients />
+					<FunFacts />
 				</div>
 			</div>
-		</div>
+		</article>
 	);
 }

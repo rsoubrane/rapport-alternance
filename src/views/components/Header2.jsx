@@ -5,7 +5,7 @@ export default function Header2() {
 		<div class='row'>
 			<div class=' col-xs-12 col-sm-12 '>
 				<div id='col_inner_id-5efb526b036ba' class='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-					<div id='home_content_cc1afe4be543928ea39a628af5774616' class='home-content third-style'>
+					<div id='content-title' class='home-content third-style'>
 						<div class='start-page-full-width'>
 							<div class='row'>
 								<div class='col-sm-12 col-md-6 col-lg-6'>
