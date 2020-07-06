@@ -5,8 +5,6 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "5.13.0",
 		"@fortawesome/free-regular-svg-icons": "^5.13.1",
-		"@fortawesome/free-solid-svg-icons": "^5.13.1",
-		"@fortawesome/react-fontawesome": "^0.1.11",
 		"@fullpage/react-fullpage": "^0.1.17",
 		"axios": "^0.19.2",
 		"bootstrap": "^4.5.0",
@@ -22,6 +20,7 @@
 		"react-datetime": "2.16.3",
 		"react-dom": "^16.13.1",
 		"react-dropzone": "^11.0.1",
+		"react-google-charts": "^3.0.15",
 		"react-icons": "^3.10.0",
 		"react-moment": "^0.9.7",
 		"react-notifications-component": "^2.4.0",
@@ -31,7 +30,8 @@
 		"react-scripts": "^3.4.1",
 		"react-select": "^3.1.0",
 		"reactstrap": "^8.4.1",
-		"redux": "^4.0.5"
+		"redux": "^4.0.5",
+		"rodal": "^1.8.1"
 	},
 	"devDependencies": {
 		"@types/react": "16.9.35"

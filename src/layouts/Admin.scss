@@ -1043,8 +1043,8 @@ body {
 	position: initial;
 }
 .start-page-full-width {
-	width: calc(100% + 140px);
-	margin-left: -70px;
+	width: calc(100% + 400px) !important;
+	margin-left: -200px;
 }
 .start-page-full-width .row {
 	margin-right: 0;
@@ -1159,9 +1159,21 @@ body {
 		margin-right: -70px;
 		z-index: 1;
 	}
+	.inner-text-block-2:not(.text-reverse) {
+		margin-left: 0;
+		padding: 50px 0px 50px 0;
+	}
 }
 #content-title .start-page-full-width .hp-text-block {
 	background-color: #333;
+}
+#content-background .start-page-full-width .hp-text-block {
+	background: url("../assets/img/free/BG\ Default.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 400px;
 }
 #content-title .hp-main-title {
 	color: #f5f5f5;
@@ -1874,21 +1886,48 @@ body {
 	-webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .home-photo .hp-inner {
-	background-image: url("../assets/img/Logo Free.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: auto;
-	display: block;
-	position: absolute;
-	top: -18px;
-	bottom: -18px;
-	width: auto;
-	left: 5px;
-	right: 5px;
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.home-photo:hover .hp-inner {
+	transform: rotateY(180deg);
+}
+.home-photo-rotated .hp-inner {
+	transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.hp-front,
+.hp-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.hp-front {
+	background-color: #bbb !important;
+	color: black;
+}
+
+/* Style the back side */
+.hp-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+}
+
 .home-buttons {
 	margin-top: 27px;
 }

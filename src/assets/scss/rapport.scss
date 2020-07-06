@@ -19,6 +19,11 @@
 @import "components/cards";
 @import "components/header";
 @import "components/buttons";
+@import "components/modals";
+@import "components/timeline";
+
+//Theme
+@import "theme/projects";
 
 .sub_menu {
 	button {

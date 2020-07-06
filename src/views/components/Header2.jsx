@@ -1,128 +1,58 @@
 import React from "react";
 
+//Reactstrap Components
+import { Row, Col } from "reactstrap";
+
+//Assets
+import Picture from "../../assets/img/profile.jpg";
+
 export default function Header2() {
 	return (
-		<div class='row'>
-			<div class=' col-xs-12 col-sm-12 '>
-				<div id='col_inner_id-5efb526b036ba' class='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-					<div id='content-title' class='home-content third-style'>
-						<div class='start-page-full-width'>
-							<div class='row'>
-								<div class='col-sm-12 col-md-6 col-lg-6'>
-									<div class='inner-content'>
-										<div
-											class='fill-block'
-											data-container='.start-page-full-width .inner-content .fill-block'
-											data-img='//lmpixels.com/wp/leven-wp/dark/wp-content/uploads/sites/4/2019/12/cesar-rincon-1024x1024.jpg'></div>
-									</div>
-								</div>
-								<div class='col-sm-12 col-md-6 col-lg-6'>
-									<div class='inner-content inner-text-block'>
-										<div class='hp-text-block'>
-											<div class='owl-carousel text-rotation owl-loaded owl-drag'>
-												<div class='owl-stage-outer'>
-													<div
-														class='owl-stage'
-														style={{
-															transform: "translate3d(-920px, 0px, 0px)",
-															transition: "all 0s ease 0s",
-															width: "2760px",
-														}}>
-														<div
-															class='owl-item cloned'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Frontend-developer</div>
-															</div>
-														</div>
-														<div
-															class='owl-item cloned'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Web Designer</div>
-															</div>
-														</div>
-														<div
-															class='owl-item animated owl-animated-in fadeIn active'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Frontend-developer</div>
-															</div>
-														</div>
-														<div
-															class='owl-item animated owl-animated-in fadeIn'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Web Designer</div>
-															</div>
-														</div>
-														<div
-															class='owl-item cloned'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Frontend-developer</div>
-															</div>
-														</div>
-														<div
-															class='owl-item cloned'
-															style={{
-																width: "450px",
-																marginRight: "10px",
-															}}>
-															<div class='item'>
-																<div class='sp-subtitle'>Web Designer</div>
-															</div>
-														</div>
+		<section className='fw-main-row'>
+			<div className='fw-container'>
+				<Row>
+					<Col xs='12' sm='12'>
+						<div id='col_inner_id-5efb526b036ba' class='fw-col-inner' data-paddings='0px 0px 0px 0px'>
+							<div id='content-title' class='home-content third-style'>
+								<div class='start-page-full-width'>
+									<Row className='flex-direction-reverse'>
+										<Col sm='12' md='6' lg='6'>
+											<div class='inner-content inner-text-block inner-text-block-2'>
+												<div class='hp-text-block'>
+													<h2 className='hp-main-title'>Romain</h2>
+
+													<p>
+														Passioné de digital, je suis un développeur web spécialisé en
+														React et Node. Dans le cadre de ma formation a l'
+														<a href='https://ecole-du-digital.com' target='_blank'>
+															ESD
+														</a>
+														, j'ai effectué une année en tant que développeur chez Free.
+														Laissez-moi vous résumer mon expérience !
+													</p>
+
+													<div className='hp-buttons'>
+														<a href='#' className='btn btn-primary'>
+															En savoir plus
+														</a>
 													</div>
 												</div>
-												<div class='owl-nav disabled'>
-													<div class='owl-prev'>prev</div>
-													<div class='owl-next'>next</div>
-												</div>
-												<div class='owl-dots disabled'></div>
 											</div>
-											<h2 class='hp-main-title'>Alex Smith</h2>
-
-											<p>
-												Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-												convallis, risus non condimentum gravida, odio mauris ullamcorper felis,
-												ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat
-												sapien pretium eu.
-											</p>
-
-											<div class='hp-buttons'>
-												<a
-													href='https://themeforest.net/item/leven-vcard-wordpress-theme/25289671'
-													target='_blank'
-													class='btn btn-primary'>
-													Download CV
-												</a>
+										</Col>
+										<Col sm='12' md='6' lg='6'>
+											<div className='inner-content'>
+												<img src={Picture} className='fill-block w-100' />
 											</div>
-										</div>
-									</div>
+										</Col>
+									</Row>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div class='fw-divider-space' style={{ paddingTop: "50px" }}></div>
-				</div>
+							<div class='fw-divider-space' style={{ paddingTop: "50px" }}></div>
+						</div>
+					</Col>
+				</Row>
 			</div>
-		</div>
+		</section>
 	);
 }

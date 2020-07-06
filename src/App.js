@@ -15,6 +15,7 @@ import { PrivateRoute } from "./services/AuthService";
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-notifications-component/dist/theme.css";
+import "rodal/lib/rodal.css";
 import "./assets/scss/rapport.scss";
 
 // Reducers

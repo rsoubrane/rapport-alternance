@@ -47,7 +47,6 @@ export default function Header() {
 									</Row>
 								</div>
 							</div>
-							<div className='fw-divider-space' style={{ paddingTop: "50px" }}></div>
 						</div>
 					</Col>
 				</Row>

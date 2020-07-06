@@ -34,7 +34,7 @@ export default function Projects() {
 									xs='6'
 									md='4'
 									className='owl-item active'
-									style={{ width: "294px", marginRight: "10px;" }}
+									style={{ width: "294px", marginRight: "10px" }}
 									key={project.id}>
 									<div className='client-block'>
 										<a href='#' title={project.title}>

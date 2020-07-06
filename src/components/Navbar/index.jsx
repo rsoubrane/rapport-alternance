@@ -20,7 +20,7 @@ export default function Navbar({ currentPage, returnPage }) {
 								currentPage === 2 ? "current-menu-item" : ""
 							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
 							<a href='#' onClick={() => returnPage(2)} data-hover='1'>
-								Résumé
+								Profil
 							</a>
 						</li>
 						<li

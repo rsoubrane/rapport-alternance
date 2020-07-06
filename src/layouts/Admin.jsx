@@ -16,8 +16,8 @@ import { NotificationService } from "../services/NotificationService";
 import { getProducts } from "../services/DataService";
 
 //Pages
-import PageHome from "../views/home";
-import PageAbout from "../views/student/about";
+import PageHome from "../views/pages/home";
+import PageAbout from "../views/pages/profile";
 import PageEnterprise from "../views/free/enterprise";
 import PageMissions from "../views/free/missions";
 import PageBilan from "../views/free/bilan";
@@ -26,10 +26,11 @@ import PageTestimonials from "../views/free/testimonials";
 //Styles
 import "./Variables.scss";
 import "./Admin.scss";
+import PageProfile from "../views/pages/profile";
 
 class Admin extends Component {
 	state = {
-		currentPage: 1,
+		currentPage: 3,
 		loading: true,
 		products: "",
 	};
@@ -59,7 +60,7 @@ class Admin extends Component {
 			case 1:
 				return <PageHome currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
 			case 2:
-				return <PageAbout currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageProfile currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
 			case 3:
 				return <PageEnterprise currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
 			case 4:
