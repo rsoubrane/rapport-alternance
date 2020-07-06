@@ -7,10 +7,6 @@ import { Provider } from "react-redux";
 
 //Layouts
 import AdminLayout from "./layouts/Admin";
-import AuthLayout from "./layouts/Auth";
-
-//Services
-import { PrivateRoute } from "./services/AuthService";
 
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,8 +26,7 @@ export default class App extends Component {
 			<Provider store={store}>
 				<BrowserRouter>
 					<Switch>
-						<Route exact path='/login' render={(props) => <AuthLayout {...props} />} />
-						<PrivateRoute path='/' component={(props) => <AdminLayout {...props} />} />
+						<Route path='/' component={(props) => <AdminLayout {...props} />} />
 					</Switch>
 				</BrowserRouter>
 				<ReactNotifications />

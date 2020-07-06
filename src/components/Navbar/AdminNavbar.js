@@ -17,9 +17,6 @@ import {
 	NavbarToggler,
 } from "reactstrap";
 
-//Services
-import { Auth } from "../../services/AuthService";
-
 //Assets
 import Avatar from "../../assets/img/avatar.png";
 

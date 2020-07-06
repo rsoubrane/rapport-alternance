@@ -50,7 +50,7 @@ export default function Timeline() {
 				<Row className='h-100'>
 					{data.map((x) => {
 						return (
-							<Col xs='4' md='2' className='timeline' key={x.id}>
+							<Col xs='6' md='2' className='timeline' key={x.id}>
 								<span className='timeline-icon'>
 									<a className='fa'>{x.date}</a>
 								</span>

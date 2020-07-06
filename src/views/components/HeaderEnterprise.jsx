@@ -3,10 +3,7 @@ import React from "react";
 //Reactstrap Components
 import { Row, Col } from "reactstrap";
 
-//Assets
-import Picture from "../../assets/img/free/BG Default.png";
-
-export default function HeaderEnterprise() {
+export default function HeaderEnterprise({ returnClick }) {
 	return (
 		<section className='fw-main-row'>
 			<div className='fw-container'>
@@ -19,9 +16,9 @@ export default function HeaderEnterprise() {
 										<Col sm='12'>
 											<div className='inner-content'>
 												<div className='hp-text-block'>
-													<h2 className='hp-main-title'>FREE</h2>
+													<h2 className='hp-main-title'>ILIAD x FREE</h2>
 
-													<p style={{ fontSize: 17, color: "#eee" }}>
+													<p>
 														Le 18 février 1999, Xavier Niel lance{" "}
 														<a href='https://free.fr' target='_blank'>
 															Free
@@ -31,14 +28,17 @@ export default function HeaderEnterprise() {
 														fournisseurs d'accès à Internet en France avec près de 13.5
 														millions d'abonnés et un chiffre d'affaire en 2019.
 													</p>
-													<p style={{ fontSize: 17, color: "#eee" }}>
+													<p>
 														Mon alternance s'est déroulée au sein de Free Distribution qui
 														est une entité de l'UES Iliad, au même titre que Free ou Free
 														Mobile.
 													</p>
 
 													<div className='hp-buttons'>
-														<a href='#' className='btn btn-primary'>
+														<a
+															href='#'
+															className='btn btn-primary'
+															onClick={() => returnClick()}>
 															En savoir plus sur l'UES Iliad
 														</a>
 													</div>

@@ -18,14 +18,10 @@ import { getProducts } from "../services/DataService";
 //Pages
 import PageHome from "../views/pages/home";
 import PageAbout from "../views/pages/profile";
-import PageEnterprise from "../views/free/enterprise";
+import PageEnterprise from "../views/pages/enterprise";
 import PageMissions from "../views/free/missions";
 import PageBilan from "../views/free/bilan";
 import PageTestimonials from "../views/free/testimonials";
-
-//Styles
-import "./Variables.scss";
-import "./Admin.scss";
 import PageProfile from "../views/pages/profile";
 
 class Admin extends Component {
