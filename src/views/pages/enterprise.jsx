@@ -1,26 +1,18 @@
 import React, { useState } from "react";
 
 //Reactstrap Components
-import { Container, Row, Col, ButtonGroup, Button } from "reactstrap";
+import { Row, Col, ButtonGroup, Button } from "reactstrap";
 
-//Utils
-import Rodal from "rodal";
+//Data
+import { KeyFiguresEnterprise, TimelineEnterprise } from "../../variables";
 
 //Components
-import FunFacts from "../components/FunFacts";
-
-import Testimonials from "../components/Testimonials";
-import Projects from "../components/Projects";
-import Presentation from "../components/Abilities";
-import Header1 from "../components/Header1";
-import Header2 from "../components/Header2";
-import Header from "../components/Header";
 import HeaderEnterprise from "../components/HeaderEnterprise";
-import Summary from "../components/Summary";
-import Projects2 from "../components/Projects2";
-import KeyPoints from "../components/Objectives";
+import Objectives from "../components/Objectives";
 import Timeline from "../components/Timeline";
 import Position from "../components/Position";
+import Details from "../components/Details";
+import KeyPoints from "../components/KeyPoints";
 
 export default function PageEnterprise() {
 	const [currentTab, setCurrentTab] = useState(1);
@@ -29,44 +21,30 @@ export default function PageEnterprise() {
 	const switchTab = () => {
 		switch (currentTab) {
 			case 1:
-				return <Timeline />;
+				return <KeyPoints title='Chiffres clés' data={KeyFiguresEnterprise} />;
 			case 2:
-				return <KeyPoints />;
+				return <Timeline title='Dates importantes de Free' data={TimelineEnterprise} />;
 			case 3:
+				return <Objectives />;
+			case 4:
 				return <Position />;
 			default:
 				return null;
 		}
 	};
 
-	const handleOpenModal = () => {
+	const handleModal = () => {
 		setIsModalOpen(!isModalOpen);
 	};
 
 	return (
 		<>
-			<Rodal
-				visible={isModalOpen}
-				onClose={() => setIsModalOpen(!isModalOpen)}
-				animation='flip'
-				className='rodal-lg'>
-				<article className='page type-page'>
-					<div className='entry-content'>
-						<div className='fw-page-builder-content'>Hello World</div>
-						<Row>
-							<Col>1</Col>
-							<Col>
-								<Position />
-							</Col>
-						</Row>
-					</div>
-				</article>
-			</Rodal>
+			<Details isOpen={isModalOpen} closeModal={handleModal} />
 
 			<article className='page type-page'>
 				<div className='entry-content'>
 					<div className='fw-page-builder-content'>
-						<HeaderEnterprise returnClick={handleOpenModal} />
+						<HeaderEnterprise returnClick={handleModal} />
 						<Row className='justify-content-center d-none d-md-block text-center'>
 							<ButtonGroup className='sub_menu'>
 								<Button
@@ -74,19 +52,26 @@ export default function PageEnterprise() {
 									color={currentTab === 1 ? "primary" : "secondary"}
 									onClick={() => setCurrentTab(1)}
 									className='switch-button'>
-									Histoire
+									Chiffre clés
 								</Button>
 								<Button
 									size='lg'
 									color={currentTab === 2 ? "primary" : "secondary"}
 									onClick={() => setCurrentTab(2)}
 									className='switch-button'>
-									Enjeux et objectifs stratégique
+									Grandes dates
 								</Button>
 								<Button
 									size='lg'
 									color={currentTab === 3 ? "primary" : "secondary"}
 									onClick={() => setCurrentTab(3)}
+									className='switch-button'>
+									Objectifs stratégique
+								</Button>
+								<Button
+									size='lg'
+									color={currentTab === 4 ? "primary" : "secondary"}
+									onClick={() => setCurrentTab(4)}
 									className='switch-button'>
 									Positionnement
 								</Button>
@@ -95,12 +80,10 @@ export default function PageEnterprise() {
 						<Row className='d-none d-md-block'>{switchTab()}</Row>
 
 						<Row className='d-md-none'>
-							<Timeline />
-							<KeyPoints />
+							<KeyPoints title='Chiffres clés' data={KeyFiguresEnterprise} />
+							<Timeline title='Dates importantes de Free' data={TimelineEnterprise} /> <Objectives />
 							<Position />
 						</Row>
-
-						<Projects2 />
 					</div>
 				</div>
 			</article>

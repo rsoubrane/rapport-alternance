@@ -1,7 +1,10 @@
 import React from "react";
 
+//Data
+import { FunFacts, Projects as MyProjects } from "../../variables";
+
 //Components
-import FunFacts from "../components/FunFacts";
+import KeyPoints from "../components/KeyPoints";
 import Testimonials from "../components/Testimonials";
 import Projects from "../components/Projects";
 import Presentation from "../components/Abilities";
@@ -18,9 +21,9 @@ export default function PageProfile() {
 				<div className='fw-page-builder-content'>
 					<Header2 />
 					<Summary />
-					<Projects />
+					<Projects title='Projets' data={MyProjects} />
 					<Projects2 />
-					<FunFacts />
+					<KeyPoints title='Fun Facts' data={FunFacts} />
 				</div>
 			</div>
 		</article>

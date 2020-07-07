@@ -5,6 +5,7 @@ import { Row, Col } from "reactstrap";
 
 //Components
 import BlockTitle from "./BlockTitle";
+import Spacer from "./Spacer";
 
 export default function Summary() {
 	return (
@@ -15,7 +16,7 @@ export default function Summary() {
 				<h1>xxx</h1>
 			</div>
 
-			<div className='fw-divider-space' style={{ paddingTop: "20px" }}></div>
+			<Spacer />
 		</>
 	);
 }

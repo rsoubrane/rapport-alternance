@@ -30,7 +30,7 @@ export default function HeaderEnterprise({ returnClick }) {
 													</p>
 													<p>
 														Mon alternance s'est déroulée au sein de Free Distribution qui
-														est une entité de l'UES Iliad, au même titre que Free ou Free
+														est une entité du groupe Iliad, au même titre que Free ou Free
 														Mobile.
 													</p>
 
@@ -39,7 +39,7 @@ export default function HeaderEnterprise({ returnClick }) {
 															href='#'
 															className='btn btn-primary'
 															onClick={() => returnClick()}>
-															En savoir plus sur l'UES Iliad
+															En savoir plus sur le groupe Iliad
 														</a>
 													</div>
 												</div>

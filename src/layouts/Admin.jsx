@@ -4,16 +4,11 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
 //Components
-import SplashScreen from "../components/Loaders/SplashScreen";
 import Header from "../components/Navbar";
 import Footer from "../components/Footer";
 
-//Redux
-import { connect } from "react-redux";
-
 //Services
 import { NotificationService } from "../services/NotificationService";
-import { getProducts } from "../services/DataService";
 
 //Pages
 import PageHome from "../views/pages/home";
@@ -28,24 +23,11 @@ class Admin extends Component {
 	state = {
 		currentPage: 3,
 		loading: true,
-		products: "",
 	};
 
 	componentDidMount() {
-		this.fetchData();
-		this.setState({ loading: false });
-		NotificationService.call("success", "Récuperation de la config", "Config récupérée avec succès");
+		NotificationService.call("success", "Bonjour", "Soyez le/la bienvenue !");
 	}
-
-	fetchData = async () => {
-		try {
-			const products = await getProducts();
-			this.setState({ products });
-		} catch (error) {
-			console.log(error);
-			NotificationService.call("danger", "Récuperation de la config", "Une erreur Api est survenue");
-		}
-	};
 
 	handleReturnPage = (newPage) => {
 		this.setState({ currentPage: newPage });
@@ -72,36 +54,28 @@ class Admin extends Component {
 
 	render() {
 		return (
-			<SplashScreen isVisible={this.state.loading}>
-				<Switch>
-					<Route exact path={"/"}>
-						<div className='page-scroll'>
-							<div
-								id='page_container'
-								className='page-container bg-move-effect theme-style-dark animated transition-flip-in-right'
-								data-animation='transition-flip-in-right'>
-								<Header currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />
-								<div id='main' className='site-main'>
-									<div id='main-content' className='single-page-content'>
-										<div id='primary' className='content-area'>
-											<div className='fw-container'>{this.switchPage()}</div>
-										</div>
+			<Switch>
+				<Route exact path={"/"}>
+					<div className='page-scroll'>
+						<div
+							id='page_container'
+							className='page-container bg-move-effect theme-style-dark animated transition-flip-in-right'
+							data-animation='transition-flip-in-right'>
+							<Header currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />
+							<div id='main' className='site-main'>
+								<div id='main-content' className='single-page-content'>
+									<div id='primary' className='content-area'>
+										<div className='fw-container'>{this.switchPage()}</div>
 									</div>
 								</div>
-								<Footer />
 							</div>
+							<Footer />
 						</div>
-					</Route>
-				</Switch>
-			</SplashScreen>
+					</div>
+				</Route>
+			</Switch>
 		);
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		global: state.currentPage,
-	};
-};
-
-export default connect(mapStateToProps)(Admin);
+export default Admin;

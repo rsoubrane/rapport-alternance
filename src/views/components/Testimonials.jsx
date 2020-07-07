@@ -1,11 +1,12 @@
 import React from "react";
+import Spacer from "./Spacer";
 
 export default function Testimonials() {
 	return (
 		<div className='row'>
 			<div className='col-xs-12 col-sm-12 '>
 				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-					<div className='fw-divider-space' style={{ paddingTop: "20px" }}></div>
+					<Spacer />
 
 					<div className='block-title'>
 						<h2>Testimonials</h2>
@@ -244,7 +245,7 @@ export default function Testimonials() {
 						</div>
 					</div>
 
-					<div className='fw-divider-space' style={{ paddingTop: "20px" }}></div>
+					<Spacer />
 				</div>
 			</div>
 		</div>

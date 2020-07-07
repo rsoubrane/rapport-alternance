@@ -47,7 +47,7 @@ const data = [
 	},
 ];
 
-export default function KeyPoints() {
+export default function Objectives() {
 	return (
 		<>
 			<BlockTitle title='Enjeux et objectifs stratégiques' />
