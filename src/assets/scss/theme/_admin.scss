@@ -2481,8 +2481,13 @@ body {
 		border-radius: 0;
 	}
 	.modal-body {
-		width: 75%;
+		width: 92%;
 		height: 100%;
 		margin: auto;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.modal-body {
+		width: 75% !important;
 	}
 }

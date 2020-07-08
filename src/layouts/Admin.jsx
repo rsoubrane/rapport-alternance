@@ -55,7 +55,7 @@ class Admin extends Component {
 	render() {
 		return (
 			<Switch>
-				<Route exact path={"/"}>
+				<Route exact path='/'>
 					<div className='page-scroll'>
 						<div
 							id='page_container'

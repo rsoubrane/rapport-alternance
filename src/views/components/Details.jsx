@@ -22,7 +22,7 @@ export default function Details({ isOpen, closeModal }) {
 			toggle={toggle}
 			id='fsModal'
 			className='animated bounceIn'
-			tabindex='-1'
+			tabIndex='-1'
 			role='dialog'
 			aria-labelledby='myModalLabel'
 			aria-hidden='true'>
@@ -184,16 +184,63 @@ export default function Details({ isOpen, closeModal }) {
 
 										<Spacer />
 
-										<Row>
-											<Col xs='12'>
-												<h1>Les différentes entités du groupe iliad</h1>
+										<h1>Les différentes entités du groupe iliad</h1>
+										<Row className='align-items-start'>
+											<Col xs='12' md='6'>
 												<p
 													style={{
 														fontSize: "16px",
 														textAlign: "justify",
 													}}>
-													Le groupe Iliad comptabilise
+													Le groupe Iliad est organisé sous la forme d'une Unité Économique et
+													sociale (UES). Une UES est un regroupement de plusieurs entreprises
+													juridiquement distinctes dotées d'une direction unique d'une
+													communauté de travailleurs dont les activités sont similaires ou
+													complémentaires. L'UES Iliad regroupe des entités autour de sujets
+													tels que la fibre optique (déploiement et maintenance, la gestion du
+													réseau Mobile, la marque et ses fonctions supports ou encore le
+													courtage en assurance.
 												</p>
+												<p
+													style={{
+														fontSize: "16px",
+														textAlign: "justify",
+													}}>
+													Iliad a également racheté d'autres entreprises afin de faire grossir
+													les effectifs et de proposer encore plus de service à ses abonnés.
+													On retrovue par exemple Protelco, une entreprise de techniciens
+													itinérants qui se déplacent chez les abonnés, Oneline qui est une
+													solution d'hébergement web ou encore des centres d'appels tels que
+													Mobipel, Equaline, Centrapel, Totalcalll, etc.
+												</p>
+											</Col>
+											<Col xs='12' md='6' className='pl-5'>
+												<Row>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Iliad</h3>
+														<p>Maison mère et autres fonctions support de l'UES</p>
+													</Col>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Free SAS</h3>
+														<p>La marque Free ainsi que les fonctions supports</p>
+													</Col>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Free Infrastructures</h3>
+														<p>Déploiement de la fibre optique sur le réseau</p>
+													</Col>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Free Réseau</h3>
+														<p>Maintenance des équipements fibre optique</p>
+													</Col>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Free Mobile</h3>
+														<p>Gestion du réseau mobile</p>
+													</Col>
+													<Col xs='6' md='4' className='text-center'>
+														<h3 className='text-uppercase'>Free Distributuion</h3>
+														<p>Gestion des Free Centers (les boutiques Free)</p>
+													</Col>
+												</Row>
 											</Col>
 										</Row>
 									</div>

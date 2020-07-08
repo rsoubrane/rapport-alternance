@@ -22,12 +22,7 @@ export default function PageHome({ returnPage }) {
 							<Col sm='12' md='6' lg='6'>
 								<div className={`home-photo ${seeMore ? ":hover" : ""}`}>
 									<div className='hp-inner'>
-										<div
-											className='hp-front'
-											// style={{
-											// 	backgroundPosition: "calc(50% + -9.77913px) calc(50% + 3.67075px)",
-											// }}
-										>
+										<div className='hp-front'>
 											<img src={Free} />
 										</div>
 										<div class='hp-back'>
