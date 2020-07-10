@@ -1096,7 +1096,12 @@ body {
 		margin: 0 !important;
 		border-radius: 0;
 	}
+	.start-page-half-width {
+		width: calc(100% + 225px) !important;
+		margin-left: -140px !important;
+	}
 }
+
 .hp-main-title {
 	font-size: 48px;
 	line-height: 1.2em;
@@ -2341,7 +2346,7 @@ body {
 	position: initial;
 }
 .home-content {
-	margin: 5% 10%;
+	margin: 0 10% 5%;
 }
 .home-text {
 	text-align: left;

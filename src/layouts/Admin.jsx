@@ -14,7 +14,7 @@ import { NotificationService } from "../services/NotificationService";
 import PageHome from "../views/pages/home";
 import PageAbout from "../views/pages/profile";
 import PageEnterprise from "../views/pages/enterprise";
-import PageMissions from "../views/free/missions";
+import PageMissions from "../views/pages/missions";
 import PageBilan from "../views/free/bilan";
 import PageTestimonials from "../views/free/testimonials";
 import PageProfile from "../views/pages/profile";

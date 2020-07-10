@@ -16,7 +16,7 @@ export default function KeyPoints({ title, data }) {
 				{data
 					? data.map((x) => {
 							return (
-								<Col xs='12' sm='6' md='3' key={data.id}>
+								<Col xs='12' sm='6' md={`${data.length > 3 ? "3" : "4"}`} key={data.id}>
 									<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 										<div className='lm-info-block gray-default'>
 											<i className={`fa fa-${x.icon}`}></i>
