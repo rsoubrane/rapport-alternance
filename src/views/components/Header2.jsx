@@ -16,7 +16,7 @@ export default function Header2() {
 							<div id='content-title' class='home-content third-style'>
 								<div class='start-page-full-width'>
 									<Row className='flex-direction-reverse'>
-										<Col sm='12' md='6' lg='6'>
+										<Col sm='12' md='8'>
 											<div class='inner-content inner-text-block inner-text-block-2'>
 												<div class='hp-text-block'>
 													<h2 className='hp-main-title'>Romain</h2>
@@ -39,7 +39,7 @@ export default function Header2() {
 												</div>
 											</div>
 										</Col>
-										<Col sm='12' md='6' lg='6'>
+										<Col sm='12' md='4'>
 											<div className='inner-content'>
 												<img src={Picture} className='fill-block w-100' />
 											</div>

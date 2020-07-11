@@ -8,13 +8,6 @@ import { KeyFiguresFD, TimelineEnterprise, ObjectivesFD } from "../../variables"
 
 //Components
 import HeaderMissions from "../components/HeaderMissions";
-import Objectives from "../components/Objectives";
-import Timeline from "../components/Timeline";
-import Position from "../components/Position";
-import Details from "../components/Details";
-import KeyPoints from "../components/KeyPoints";
-import PolesFD from "../components/PolesFD";
-import DescriptionFD from "../components/DescriptionFD";
 
 export default function PageMissions() {
 	const [currentTab, setCurrentTab] = useState(1);
@@ -23,13 +16,13 @@ export default function PageMissions() {
 	const switchTab = () => {
 		switch (currentTab) {
 			case 1:
-				return <DescriptionFD />;
+				return;
 			case 2:
-				return <KeyPoints title='Chiffres clés' data={KeyFiguresFD} />;
+				return;
 			case 3:
-				return <PolesFD />;
+				return;
 			case 4:
-				return <Objectives title='Objectifs et valeurs' data={ObjectivesFD} />;
+				return;
 			default:
 				return null;
 		}

@@ -4,7 +4,7 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
+import BlockTitle from "../enterprise/components/BlockTitle";
 
 const abilities = [
 	{

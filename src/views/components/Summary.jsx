@@ -4,8 +4,8 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
-import Spacer from "./Spacer";
+import BlockTitle from "../enterprise/components/BlockTitle";
+import Spacer from "../enterprise/components/Spacer";
 
 export default function Summary() {
 	return (

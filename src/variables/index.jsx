@@ -150,24 +150,53 @@ export const ObjectivesFD = [
 	},
 ];
 
-export const ValuesFD = [
+export const PolesFD = [
 	{
 		id: 0,
+		icon: "hands-helping",
+		title: "Vente et opérations",
+		description: "Gestion des Free Centers (boutiques Free), des coachs et managers de ces FC.",
+	},
+	{
+		id: 1,
+		icon: "cogs",
+		title: "Déploiement et maintenance",
+		description: "Gestion de l'ouverture et maintenance de toutes les Free Centers de France",
+	},
+	{
+		id: 2,
+		icon: "desktop",
+		title: "Recherche & développement",
+		description: "Gestion de toutes les foncions supports, R&D (mon pôle), RH, etc.",
+	},
+];
+
+export const ValuesFree = [
+	{
+		id: 0,
+		color: "blue",
+		icon: "stopwatch",
 		title: "Flexibilité",
 		description: "Souple, Agile, Réactif",
 	},
 	{
 		id: 1,
+		color: "orange",
+		icon: "people-carry",
 		title: "Efficacité",
 		description: "Objectifs, Réussite de l'équipe",
 	},
 	{
 		id: 2,
+		color: "pink",
+		icon: "user-check",
 		title: "Autonomie",
-		description: "Initiatives, Décision, Confiance",
+		description: "Initiatives, Prise de décision, Confiance",
 	},
 	{
 		id: 3,
+		color: "yellow",
+		icon: "lightbulb",
 		title: "Audace",
 		description: "Prise de risque, Innovation",
 	},

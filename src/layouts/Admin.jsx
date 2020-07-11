@@ -13,7 +13,7 @@ import { NotificationService } from "../services/NotificationService";
 //Pages
 import PageHome from "../views/pages/home";
 import PageAbout from "../views/pages/profile";
-import PageEnterprise from "../views/pages/enterprise";
+import PageEnterprise from "../views/enterprise";
 import PageMissions from "../views/pages/missions";
 import PageBilan from "../views/free/bilan";
 import PageTestimonials from "../views/free/testimonials";

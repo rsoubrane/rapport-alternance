@@ -4,7 +4,7 @@ import React from "react";
 import { FunFacts, Projects as MyProjects } from "../../variables";
 
 //Components
-import KeyPoints from "../components/KeyPoints";
+// import KeyPoints from "../components/KeyPoints";
 import Testimonials from "../components/Testimonials";
 import Projects from "../components/Projects";
 import Presentation from "../components/Abilities";
@@ -23,7 +23,7 @@ export default function PageProfile() {
 					<Summary />
 					<Projects title='Projets' data={MyProjects} />
 					<Projects2 />
-					<KeyPoints title='Fun Facts' data={FunFacts} />
+					{/* <KeyPoints title='Fun Facts' data={FunFacts} /> */}
 				</div>
 			</div>
 		</article>

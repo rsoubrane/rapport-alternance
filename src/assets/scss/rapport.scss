@@ -3,10 +3,6 @@
 @import "custom/buttons";
 @import "custom/utils";
 
-// Views
-@import "views/home";
-@import "views/inputs";
-
 // Components
 @import "components/loaders";
 @import "components/header";
@@ -17,3 +13,8 @@
 @import "theme/animations";
 @import "theme/icons";
 @import "theme/admin";
+
+// Views
+@import "views/home";
+@import "views/enterprise";
+@import "views/inputs";
