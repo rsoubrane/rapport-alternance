@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 
 //Layouts
-import AdminLayout from "./layouts/Admin";
+import AdminLayout from "./views";
 
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";

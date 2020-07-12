@@ -13,17 +13,17 @@ export default function Header1() {
 				<Row>
 					<Col xs='12' sm='12'>
 						<div id='col_inner_id-5efba767726eb' className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-							<div id='home_content_7665f8419b51579496e14fe7d99b366e' className='home-content with-video'>
+							<div id='home_content_7665f8419b51579496e14fe7d99b366e' className='home-content with-photo'>
 								<div className='row flex-v-align'>
 									<div className='col-sm-12 col-md-7 col-lg-7'>
 										<div
-											className='home-bgvideo'
+											className='home-bgphoto'
 											data-videomp='//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/mp4_video.mp4'
 											data-videowebm='//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/webm_video.webm'
 											data-img='//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/fallback.jpg'
 											style={{ position: "relative", zIndex: 1 }}>
 											<div
-												className='vidbg-container'
+												className='imgbg-container'
 												style={{
 													backgroundImage:
 														'url("//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/fallback.jpg")',
@@ -46,7 +46,7 @@ export default function Header1() {
 														type='video/webm'
 													/>
 												</video>
-												<div className='vidbg-overlay'></div>
+												<div className='imgbg-overlay'></div>
 											</div>
 										</div>
 									</div>

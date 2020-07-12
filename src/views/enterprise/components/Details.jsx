@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 //Reactstrap Components
-import { Row, Col, Modal, ModalBody, ModalFooter } from "reactstrap";
+import { Row, Col, Modal, ModalBody } from "reactstrap";
 
 //Components
 import Spacer from "./Spacer";

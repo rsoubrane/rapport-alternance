@@ -11,17 +11,16 @@ import Footer from "../components/Footer";
 import { NotificationService } from "../services/NotificationService";
 
 //Pages
-import PageHome from "../views/pages/home";
-import PageAbout from "../views/pages/profile";
-import PageEnterprise from "../views/enterprise";
-import PageMissions from "../views/pages/missions";
-import PageBilan from "../views/free/bilan";
-import PageTestimonials from "../views/free/testimonials";
-import PageProfile from "../views/pages/profile";
+import PageHome from "./home";
+import PageProfile from "./profile";
+import PageEnterprise from "./enterprise";
+import PageMissions from "./pages/missions";
+import PageBilan from "./pages/bilan";
+import PageTestimonials from "./pages/testimonials";
 
 class Admin extends Component {
 	state = {
-		currentPage: 3,
+		currentPage: 2,
 		loading: true,
 	};
 
@@ -58,13 +57,12 @@ class Admin extends Component {
 				<Route exact path='/'>
 					<div className='page-scroll'>
 						<div
-							id='page_container'
 							className='page-container bg-move-effect theme-style-dark animated transition-flip-in-right'
 							data-animation='transition-flip-in-right'>
 							<Header currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />
-							<div id='main' className='site-main'>
-								<div id='main-content' className='single-page-content'>
-									<div id='primary' className='content-area'>
+							<div className='site-main'>
+								<div className='single-page-content'>
+									<div className='content-area'>
 										<div className='fw-container'>{this.switchPage()}</div>
 									</div>
 								</div>
