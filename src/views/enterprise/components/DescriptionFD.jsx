@@ -17,7 +17,7 @@ export default function DescriptionFD({ title }) {
 				<BlockTitle title={title} />
 
 				<p className='description-fd'>
-					Free Distribution est une entité du groupe Free qui a vu le jour en 2007 à la demande de Xavier
+					Free Distribution est une entité du groupe Free qui a vu le jour en 2010 à la demande de Xavier
 					Niel. A ses débuts, FD représentait les boutiques (également appellées Free Center) et avait pour
 					objectif de proposer un Service après vente physique pour les freebox majoritairement. Il n'était
 					alors pas question de faire une quelconque prospection, mais simplement d'assurer une présence pour

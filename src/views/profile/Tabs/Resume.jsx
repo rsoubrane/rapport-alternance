@@ -1,5 +1,11 @@
 import React from "react";
 
+//Reactstrap Components
+import { Row, Col } from "reactstrap";
+
+//Components
+import BlockTitle from "../../enterprise/components/BlockTitle";
+
 const formations = [
 	{
 		id: 0,
@@ -27,6 +33,87 @@ const formations = [
 	},
 ];
 
+const certifications = [
+	{
+		id: 0,
+		title: "Certification Google Digital Active",
+		issuer: "Google",
+		date: "2017",
+	},
+	{
+		id: 1,
+		title: "React - The Complete Guide",
+		issuer: "Udemy",
+		date: "2019",
+	},
+	{
+		id: 2,
+		title: "React Native - The Practical Guide",
+		issuer: "Udemy",
+		date: "2020",
+	},
+];
+
+const experiences = [
+	{
+		id: 0,
+		title: "Développeur Web",
+		date: "2017",
+		place: "Calmedica, Paris",
+		description: [
+			{ id: 0, text: "Développement site WordPress" },
+			{ id: 1, text: "Refactoring back-office (Symfony)" },
+		],
+	},
+	{
+		id: 1,
+		title: "Esport coach & manager",
+		date: "2018",
+		place: "Allegiance, Los Angeles",
+		description: [
+			{ id: 0, text: "Gestion d’une équipe professionnelle sur un jeu vidéo" },
+			{ id: 1, text: "organisation d’entrainements et de débriefing quotidiens" },
+		],
+	},
+	{
+		id: 2,
+		title: "Développeur Full Stack (React & Node)",
+		date: "2019",
+		place: "onepoint, Paris",
+		description: [
+			{
+				id: 0,
+				text:
+					"Automatisation des tests de performance, refactoring en front (React) et en back (Node / Express)",
+			},
+			{
+				id: 1,
+				text: "Amélioration des layouts et de l'aspect visuel de softwares pour BNP Paribas (React/Java)",
+			},
+		],
+	},
+	{
+		id: 3,
+		title: "Développeur Front End (React)",
+		date: "2019-2020",
+		place: "Free, Paris",
+		description: [
+			{
+				id: 0,
+				text: "Développement de plusieurs projets (React/Symfony)",
+			},
+			{
+				id: 1,
+				text: "Déploiement de projets sous docker",
+			},
+			{
+				id: 2,
+				text: "Propositions UX/UI",
+			},
+		],
+	},
+];
+
 export default function TabResume() {
 	const downloadCV = () => {
 		console.log("Download");
@@ -38,12 +125,10 @@ export default function TabResume() {
 				<h2>Resume</h2>
 			</div>
 			<div className='page-content'>
-				<div className='row'>
-					<div className='col-sm-6 col-md-6 col-lg-6'>
+				<Row>
+					<Col xs='12' md='6'>
 						<div className='block'>
-							<div className='block-title'>
-								<h3>Formations</h3>
-							</div>
+							<BlockTitle title='Formations' />
 
 							{formations.map((formation) => {
 								return (
@@ -57,58 +142,76 @@ export default function TabResume() {
 								);
 							})}
 						</div>
-					</div>
 
-					<div className='col-sm-6 col-md-6 col-lg-6'>
 						<div className='block'>
-							<div className='block-title'>
-								<h3>Experience</h3>
-							</div>
+							<BlockTitle title='Certifications' />
 
-							<div className='timeline'>
-								<div className='timeline-item'>
-									<h4 className='item-title'>Frontend-developer</h4>
-									<span className='item-period'>Dec 2012 - Current</span>
-									<span className='item-small'>Web Agency</span>
-									<p className='item-description'>
-										Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-									</p>
-								</div>
-
-								<div className='timeline-item'>
-									<h4 className='item-title'>Web Designer</h4>
-									<span className='item-period'>Dec 2011 - Nov 2012</span>
-									<span className='item-small'>Apple Inc.</span>
-									<p className='item-description'>
-										Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-									</p>
-								</div>
-
-								<div className='timeline-item'>
-									<h4 className='item-title'>Graphic Designer</h4>
-									<span className='item-period'>Jan 2010 - Dec 2011</span>
-									<span className='item-small'>Apple Inc.</span>
-									<p className='item-description'>
-										Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
-									</p>
-								</div>
-							</div>
+							{certifications.map((certification) => {
+								return (
+									<div class='certificate-item clearfix'>
+										<div class='certi-logo'>
+											<img
+												src='//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/client-7.png'
+												alt='logo'
+											/>
+										</div>
+										<div class='certi-content'>
+											<div class='certi-title'>
+												<span>
+													<h4>{certification.title}</h4>
+												</span>{" "}
+												-<span class='certi-id'>{certification.issuer}</span>
+											</div>
+											<div></div>
+											<div class='certi-date'>
+												<span>{certification.date}</span>
+											</div>
+										</div>
+									</div>
+									// <div className='certification-item'>
+									// 	<h3>{certification.title}</h3>
+									// </div>
+								);
+							})}
 						</div>
-					</div>
-				</div>
+					</Col>
 
-				<div className='row'>
-					<div className='col-sm-12 col-md-12 col-lg-12'>
+					<Col xs='12' md='6'>
 						<div className='block'>
-							<div className='center download-resume'>
-								<a href='#' onClick={() => downloadCV()} className='btn btn-primary'>
-									Télécharger mon CV
-								</a>
-							</div>
+							<BlockTitle title='Expériences' />
+
+							{experiences.map((experience) => {
+								return (
+									<div className='timeline'>
+										<div className='timeline-item'>
+											<h4 className='item-title'>{experience.title}</h4>
+											<span className='item-period'>{experience.date}</span>
+											<span className='item-small'>{experience.place}</span>
+											{experience.description
+												? experience.description.map((x) => {
+														return <p className='item-description'>{x.text}</p>;
+												  })
+												: null}
+										</div>
+									</div>
+								);
+							})}
 						</div>
-					</div>
-				</div>
+					</Col>
+				</Row>
 			</div>
+
+			<Row>
+				<Col xs='12'>
+					<div className='block'>
+						<div className='center download-resume'>
+							<a href='#' onClick={() => downloadCV()} className='btn btn-primary'>
+								Télécharger mon CV
+							</a>
+						</div>
+					</div>
+				</Col>
+			</Row>
 		</div>
 	);
 }

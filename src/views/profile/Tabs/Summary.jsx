@@ -18,15 +18,15 @@ const data = [
 		descriptions: [
 			{
 				id: 0,
-				title: "HTML/CSS/JS",
+				title: "HTML / CSS / JS",
 			},
 			{
 				id: 1,
-				title: "React/React Native",
+				title: "React / React Native",
 			},
 			{
 				id: 2,
-				title: "Node/SQL/GraphQL",
+				title: "Node / SQL / GraphQL",
 			},
 		],
 	},
@@ -56,15 +56,15 @@ const data = [
 		descriptions: [
 			{
 				id: 0,
-				title: "UI/UX",
+				title: "UI / UX",
 			},
 			{
 				id: 1,
-				title: "SEO/SEA",
+				title: "SEO / SEA",
 			},
 			{
 				id: 2,
-				title: "Scrum/Kanban/Lean",
+				title: "Scrum / Kanban / Lean",
 			},
 		],
 	},
