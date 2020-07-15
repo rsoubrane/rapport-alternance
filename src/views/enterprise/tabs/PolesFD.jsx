@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
+import BlockTitle from "../components/BlockTitle";
 
 export default function PolesFD({ title, data }) {
 	return (

@@ -3,85 +3,27 @@ import React from "react";
 //Reactstrap Components
 import { Row, Col } from "reactstrap";
 
-//Assets
-import Profile from "../../../assets/img/profile.jpg";
-import Technical from "../../../assets/img/icons/creativity_icon.png";
-import Management from "../../../assets/img/icons/advetising_icon.png";
-import Others from "../../../assets/img/icons/web_design_icon.png";
+//Components
 import BlockTitle from "../../enterprise/components/BlockTitle";
 
-const data = [
-	{
-		id: 0,
-		img: Technical,
-		title: "Compétences Techniques",
-		descriptions: [
-			{
-				id: 0,
-				title: "HTML / CSS / JS",
-			},
-			{
-				id: 1,
-				title: "React / React Native",
-			},
-			{
-				id: 2,
-				title: "Node / SQL / GraphQL",
-			},
-		],
-	},
-	{
-		id: 1,
-		img: Management,
-		title: "Compétences Managériales",
-		descriptions: [
-			{
-				id: 0,
-				title: "Gestion de projets",
-			},
-			{
-				id: 1,
-				title: "Capacité décisionnelle",
-			},
-			{
-				id: 2,
-				title: "Travail d'équipe",
-			},
-		],
-	},
-	{
-		id: 2,
-		img: Others,
-		title: "Autres compétences",
-		descriptions: [
-			{
-				id: 0,
-				title: "UI / UX",
-			},
-			{
-				id: 1,
-				title: "SEO / SEA",
-			},
-			{
-				id: 2,
-				title: "Scrum / Kanban / Lean",
-			},
-		],
-	},
-];
+//Assets
+import Profile from "../../../assets/img/profile/romain.jpg";
+
+//Data
+import { Abilities } from "../../../variables";
 
 export default function TabSummary() {
 	return (
 		<div className='section-inner start-page-content'>
 			<div className='page-header'>
 				<Row>
-					<Col xs='4'>
+					<Col xs='12' md='4'>
 						<div className='photo'>
 							<img src={Profile} alt='Profile' />
 						</div>
 					</Col>
 
-					<Col xs='8'>
+					<Col xs='12' md='8'>
 						<div className='title-block'>
 							<h1>Romain Soubrane</h1>
 							<div className='sp-subtitle'>Développeur Web</div>
@@ -104,7 +46,7 @@ export default function TabSummary() {
 
 			<div className='page-content'>
 				<Row>
-					<Col xs='7'>
+					<Col xs='12' md='7'>
 						<div className='about-me'>
 							<BlockTitle title='À propos de moi' marginTop={0} />
 							<p>
@@ -119,7 +61,7 @@ export default function TabSummary() {
 						</div>
 					</Col>
 
-					<Col xs='5'>
+					<Col xs='12' md='5'>
 						<ul className='info-list'>
 							<li>
 								<span className='title'>Localisation</span>
@@ -136,7 +78,7 @@ export default function TabSummary() {
 								</span>
 							</li>
 							<li>
-								<span className='title'>Eail</span>
+								<span className='title'>Email</span>
 								<span className='value'>
 									<a href='mailto:r.soubrane@icloud.com'>r.soubrane@icloud.com</a>
 								</span>
@@ -150,24 +92,10 @@ export default function TabSummary() {
 						<BlockTitle title='Mes compétences' />
 					</Col>
 
-					{data
-						? data.map((skill) => {
+					{Abilities
+						? Abilities.map((skill) => {
 								return (
-									<Col xs='12' md='4' key={skill.id}>
-										{/* <div class='services-1'>
-												<span class='icon'>
-													<i class='fa fa-times'></i>
-												</span>
-												<div class='desc'>
-													<h3 class='mb-5'>
-														<a href='#'>{skill.title}</a>
-													</h3>
-													{skill.descriptions.map((el) => (
-														<h4 key={el.id}>{el.title}</h4>
-													))}
-												</div>
-											</div> */}
-
+									<Col xs='12' md='4' className='mt-3 mt-md-0' key={skill.id}>
 										<div className='service-block'>
 											<div className='service-info'>
 												<div className='service-image'>

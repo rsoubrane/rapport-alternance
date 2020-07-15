@@ -168,6 +168,7 @@
 		}
 
 		.middle-row {
+			height: 22%;
 			position: relative;
 			text-align: center;
 			margin: 0;
@@ -185,6 +186,7 @@
 		}
 
 		.bottom-row {
+			height: 55%;
 			position: relative;
 			margin: 0;
 
@@ -199,6 +201,9 @@
 				line-height: 1.7em;
 				padding-bottom: 0.2em;
 				text-align: left;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
 
 				span {
 					color: #2d3244;
@@ -209,7 +214,7 @@
 				}
 
 				.missions {
-					width: 80%;
+					width: 100%;
 					justify-content: space-around;
 					align-items: flex-end;
 

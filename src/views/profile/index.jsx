@@ -24,7 +24,15 @@ export default function PageProfile() {
 	return (
 		<div className='subpages'>
 			{switchTab()}
-			<Button onClick={() => (currentTab === 1 ? setCurrentTab(2) : setCurrentTab(1))}>Changer de page</Button>
+			{currentTab === 1 ? (
+				<Button className='switch-page right' onClick={() => setCurrentTab(2)}>
+					x
+				</Button>
+			) : (
+				<Button className='switch-page left' onClick={() => setCurrentTab(1)}>
+					x
+				</Button>
+			)}
 		</div>
 	);
 }

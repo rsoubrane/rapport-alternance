@@ -2,6 +2,19 @@
 import Pym from "../assets/img/projects/pym.png";
 import TheMask from "../assets/img/projects/the_mask.png";
 
+import Technical from "../assets/img/icons/creativity_icon.png";
+import Management from "../assets/img/icons/advertising_icon.png";
+import Others from "../assets/img/icons/web_design_icon.png";
+import Google from "../assets/img/certifications/digital-active.jpg";
+import React from "../assets/img/certifications/react.jpg";
+import ReactNative from "../assets/img/certifications/react-native.jpg";
+
+import Harry from "../assets/img/profile/harry.jpg";
+import Kirthy from "../assets/img/profile/kirthy.jpg";
+import Free from "../assets/img/free/BGDefault.png";
+import Team from "../assets/img/others/team.jpg";
+import ESD from "../assets/img/others/esd.jpg";
+
 export const KeyFiguresEnterprise = [
 	{
 		id: 0,
@@ -233,4 +246,221 @@ export const Projects = [
 	{ id: 0, title: "Pym", imgSrc: Pym },
 	{ id: 1, title: "The Mask", imgSrc: TheMask },
 	{ id: 2, title: "Jarvis" },
+];
+
+// Profile
+export const Abilities = [
+	{
+		id: 0,
+		img: Technical,
+		title: "Compétences Techniques",
+		descriptions: [
+			{
+				id: 0,
+				title: "HTML / CSS / JS",
+			},
+			{
+				id: 1,
+				title: "React / React Native",
+			},
+			{
+				id: 2,
+				title: "Node / SQL / GraphQL",
+			},
+		],
+	},
+	{
+		id: 1,
+		img: Management,
+		title: "Compétences Managériales",
+		descriptions: [
+			{
+				id: 0,
+				title: "Gestion de projets",
+			},
+			{
+				id: 1,
+				title: "Capacité décisionnelle",
+			},
+			{
+				id: 2,
+				title: "Travail d'équipe",
+			},
+		],
+	},
+	{
+		id: 2,
+		img: Others,
+		title: "Autres compétences",
+		descriptions: [
+			{
+				id: 0,
+				title: "UI / UX",
+			},
+			{
+				id: 1,
+				title: "SEO / SEA",
+			},
+			{
+				id: 2,
+				title: "Scrum / Kanban / Lean",
+			},
+		],
+	},
+];
+
+export const Formations = [
+	{
+		id: 0,
+		title: "Bac Scientifique",
+		date: "2015",
+		place: "Lycée Français Charles de Gaulle, Londres",
+	},
+	{
+		id: 1,
+		title: "CPGE MPSI",
+		date: "2015-2017",
+		place: "ISEP Paris",
+	},
+	{
+		id: 2,
+		title: "Bachelor Chargé de projet digital",
+		date: "2017-2020",
+		place: "ESD Paris",
+	},
+	{
+		id: 3,
+		title: "Master CTO & Tech Lead",
+		date: "2020-2022",
+		place: "EEMI Paris",
+	},
+];
+
+export const Certifications = [
+	{
+		id: 0,
+		img: Google,
+		title: "Certification Google Digital Active",
+		issuer: "Google",
+		date: "2017",
+	},
+	{
+		id: 1,
+		img: React,
+		title: "React - The Complete Guide",
+		issuer: "Udemy",
+		date: "2019",
+	},
+	{
+		id: 2,
+		img: ReactNative,
+		title: "React Native - The Practical Guide",
+		issuer: "Udemy",
+		date: "2020",
+	},
+];
+
+export const Experiences = [
+	{
+		id: 0,
+		title: "Développeur Web",
+		date: "2017",
+		place: "Calmedica, Paris",
+		description: [
+			{ id: 0, text: "Développement site WordPress" },
+			{ id: 1, text: "Refactoring back-office (Symfony)" },
+		],
+	},
+	{
+		id: 1,
+		title: "Esport coach & manager",
+		date: "2018",
+		place: "Allegiance, Los Angeles",
+		description: [
+			{ id: 0, text: "Gestion d’une équipe professionnelle sur un jeu vidéo" },
+			{ id: 1, text: "Organisation d’entrainements et de débriefing quotidiens" },
+		],
+	},
+	{
+		id: 2,
+		title: "Développeur Full Stack (React & Node)",
+		date: "2019",
+		place: "onepoint, Paris",
+		description: [
+			{
+				id: 0,
+				text:
+					"Automatisation des tests de performance, refactoring en front (React) et en back (Node / Express)",
+			},
+			{
+				id: 1,
+				text: "Déploiement de nouvelles fonctionnalités (React / Java)",
+			},
+			{
+				id: 2,
+				text: "Amélioration de l'aspect visuel de softwares",
+			},
+		],
+	},
+	{
+		id: 3,
+		title: "Développeur Front End (React)",
+		date: "2019-2020",
+		place: "Free, Paris",
+		description: [
+			{
+				id: 0,
+				text: "Développement de plusieurs projets (React/Symfony)",
+			},
+			{
+				id: 1,
+				text: "Déploiement de projets sous docker",
+			},
+			{
+				id: 2,
+				text: "Propositions UX/UI",
+			},
+		],
+	},
+];
+
+export const Testimonials = [
+	{
+		id: 0,
+		testimony: "Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.",
+		img: Harry,
+		name: "Harry Amram",
+		poste: "Lead Developer",
+	},
+	{
+		id: 1,
+		testimony: "Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.",
+		img: Kirthy,
+		name: "Kirthy Anandout",
+		poste: "Responsable pôle R&D",
+	},
+];
+
+export const Acknowledgements = [
+	{
+		id: 0,
+		img: Free,
+		title: "Free Distribution",
+		description:
+			"Je remercie F Distribution pour l'accueil et l'expérience que j'ai pu acquérir en participant à es projets divers et variés. C'est une entreprise innovante où chacun peut s'exprimer et faire part de sa créativité",
+	},
+	{
+		id: 1,
+		img: Team,
+		title: "Mon équipe",
+		description:
+			"Je remercie mon équipe pour ces quelques mois passés à leurs côtés. Des profils diversifiés et une super ambiance de travail offrent un super cadre de travail. Mention spéciale à Harry pour son accompagnement quotidien, sa pédagogie et sa volonté de me faire toujours évoluer !",
+	},
+	{
+		id: 2,
+		img: ESD,
+		title: "ESD",
+		description:
+			"Et enfin je remercie l'ESD pour ces 3 années passées au sein du bachelor chargé de projet digital. Ce fût une expérience humaine mais surtout très enrichissante d'un point de vue personnel ! ",
+	},
 ];

@@ -3,15 +3,14 @@ import React, { useState } from "react";
 //Reactstrap Components
 import { Row, Col, Container } from "reactstrap";
 
+//Components
+import DownloadCV from "../components/DownloadCV";
+
 //Assets
 import logoFree from "../../assets/img/Logo Free.png";
 import logoFD from "../../assets/img/free/fd_white.png";
 import Pym from "../../assets/img/projects/pym.png";
 import TheMask from "../../assets/img/projects/the_mask.png";
-
-const downloadCV = () => {
-	console.log("Download");
-};
 
 export default function PageHome({ returnPage }) {
 	const [seeMore, setSeeMore] = useState(false);
@@ -62,16 +61,15 @@ export default function PageHome({ returnPage }) {
 															Siège Social - 8 Rue de la ville-L'Évêque, 75008 Paris
 														</div>
 														<div>
-															<span className='fa fa-briefcase'></span>
 															<div className='missions d-inline-flex'>
-																<a href='#' onClick={() => returnPage(4)}>
-																	<img src={Pym} alt='Pym' />
-																</a>
 																<a href='#' onClick={() => returnPage(4)}>
 																	<img src={TheMask} alt='TheMask' />
 																</a>
 																<a href='#' onClick={() => returnPage(4)}>
 																	Jarvis
+																</a>
+																<a href='#' onClick={() => returnPage(4)}>
+																	<img src={Pym} alt='Pym' />
 																</a>
 															</div>
 														</div>
@@ -103,9 +101,7 @@ export default function PageHome({ returnPage }) {
 											className='btn btn-primary d-none d-md-inline-block'>
 											{!seeMore ? "En savoir plus" : "En savoir moins"}
 										</a>
-										<a href='#' onClick={() => downloadCV()} className='btn btn-primary'>
-											Télécharger mon CV
-										</a>
+										<DownloadCV />
 									</div>
 								</div>
 							</Col>
@@ -115,47 +111,4 @@ export default function PageHome({ returnPage }) {
 			</Col>
 		</Row>
 	);
-}
-
-{
-	/* <Row>
-			<Col xs='12' sm='12'>
-				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-					<div id='home_content_389dca2021be1de74f6007502997009f' className='home-content with-photo'>
-						<div className='row flex-v-align flex-direction-reverse'>
-							<div className='col-sm-12 col-md-7 col-lg-7'>
-								<div className='home-bgphoto' style={{ position: "relative", zIndex: 1 }}>
-									<div
-										className='imgbg-container'
-										style={{
-											backgroundImage:
-												"url(&quot;//lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/fallback.jpg&quot;);",
-										}}>
-										<img src={Free} />
-										<div className='imgbg-overlay'></div>
-									</div>
-								</div>
-							</div>
-							<div className='col-sm-12 col-md-5 col-lg-5'>
-								<div className='home-text'>
-									<h1>Independent UI/UX Designer</h1>
-									<p>
-										Quisque lorem eros, ultrices commodo tortor ut, cursus venenatis elit. Morbi
-										aliquam aliquam malesuada. Pellentesque id mauris porttitor, cursus libero sit.
-									</p>
-									<div className='home-buttons'>
-										<a
-											href='https://themeforest.net/item/leven-vcard-wordpress-theme/25289671'
-											target='_blank'
-											className='btn btn-primary'>
-											Download CV
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</Col>
-		</Row> */
 }

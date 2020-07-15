@@ -4,7 +4,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
+import BlockTitle from "../components/BlockTitle";
 
 export default function Timeline({ title, data }) {
 	return (

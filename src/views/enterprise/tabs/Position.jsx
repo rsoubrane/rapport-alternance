@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
+import BlockTitle from "../components/BlockTitle";
 
 //Assets
 import FAI from "../../../assets/img/data/FAI.png";

@@ -7,8 +7,8 @@ import Zoom from "react-reveal/Zoom";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
-import Spacer from "./Spacer";
+import BlockTitle from "../components/BlockTitle";
+import Spacer from "../components/Spacer";
 
 export default function KeyPoints({ title, data }) {
 	return (

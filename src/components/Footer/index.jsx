@@ -6,17 +6,22 @@ export default function Footer() {
 			<div className='footer-social'>
 				<ul className='footer-social-links'>
 					<li>
-						<a href='#' target='_blank'>
+						<a href='https://linkedin.com/rsoubrane' target='_blank'>
+							LinkedIn
+						</a>
+					</li>
+					<li>
+						<a href='https://twitter.com/EpticRS' target='_blank'>
 							Twitter
 						</a>
 					</li>
 					<li>
-						<a href='#' target='_blank'>
+						<a href='https://facebook.com/rsoubrane' target='_blank'>
 							Facebook
 						</a>
 					</li>
 					<li>
-						<a href='#' target='_blank'>
+						<a href='https://instagram.com/rsoubrane' target='_blank'>
 							Instagram
 						</a>
 					</li>

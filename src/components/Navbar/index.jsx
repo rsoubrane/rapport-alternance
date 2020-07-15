@@ -47,14 +47,6 @@ export default function Navbar({ currentPage, returnPage }) {
 								Bilan
 							</a>
 						</li>
-						<li
-							className={`${
-								currentPage === 6 ? "current-menu-item" : ""
-							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
-							<a href='#' onClick={() => returnPage(6)} data-hover='1'>
-								Témoignage
-							</a>
-						</li>
 					</ul>
 				</div>
 

@@ -12,17 +12,19 @@ import {
 	PolesFD as Poles,
 } from "../../variables";
 
+//Tabs
+import KeyPoints from "./tabs/KeyPoints";
+import Timeline from "./tabs/Timeline";
+import Objectives from "./tabs/Objectives";
+import Position from "./tabs/Position";
+import Values from "./tabs/Values";
+import PolesFD from "./tabs/PolesFD";
+import DescriptionFD from "./tabs/DescriptionFD";
+import ObjectivesFD from "./tabs/ObjectivesFD";
+
 //Components
-import HeaderEnterprise from "./components/HeaderEnterprise";
-import Objectives from "./components/Objectives";
-import Timeline from "./components/Timeline";
-import Position from "./components/Position";
-import Values from "./components/Values";
+import HeaderEnterprise from "./components/Header";
 import Details from "./components/Details";
-import KeyPoints from "./components/KeyPoints";
-import PolesFD from "./components/PolesFD";
-import DescriptionFD from "./components/DescriptionFD";
-import ObjectivesFD from "./components/ObjectivesFD";
 
 export default function PageEnterprise({ returnPage }) {
 	const [currentTab, setCurrentTab] = useState(1);

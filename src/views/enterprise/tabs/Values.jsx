@@ -7,11 +7,10 @@ import Zoom from "react-reveal/Zoom";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "./BlockTitle";
+import BlockTitle from "../components/BlockTitle";
 
 export default function Values({ title, data }) {
 	const switchIconBox = (color) => {
-		console.log("color: ", color);
 		switch (color) {
 			case "blue":
 				return (
@@ -61,7 +60,7 @@ export default function Values({ title, data }) {
 								<Col xs='12' sm='3' className='mt-3 mt-md-0'>
 									<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 										<Zoom delay={200}>
-											<div className={`icon-box iconbox-${x.color}`}>
+											<div className={`values-icon-box iconbox-${x.color}`}>
 												<div className='icon'>
 													<svg
 														width='100'

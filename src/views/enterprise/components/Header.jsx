@@ -10,7 +10,7 @@ export default function HeaderEnterprise({ returnClick }) {
 				<Row className='align-items-center'>
 					<Col xs='12' sm='12'>
 						<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-							<div id='content-background' className='home-content third-style'>
+							<div id='content-background' className='home-content second-style'>
 								<div className='start-page-full-width'>
 									<Row className='flex-direction-reverse'>
 										<Col sm='12'>

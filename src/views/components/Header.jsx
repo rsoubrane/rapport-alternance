@@ -4,7 +4,7 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 
 //Assets
-import Picture from "../../assets/img/profile.jpg";
+import Picture from "../../assets/img/profile/romain.jpg";
 
 export default function Header() {
 	return (

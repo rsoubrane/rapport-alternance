@@ -15,12 +15,11 @@ import PageHome from "./home";
 import PageProfile from "./profile";
 import PageEnterprise from "./enterprise";
 import PageMissions from "./pages/missions";
-import PageBilan from "./pages/bilan";
-import PageTestimonials from "./pages/testimonials";
+import PageBilan from "./bilan";
 
 class Admin extends Component {
 	state = {
-		currentPage: 2,
+		currentPage: 5,
 		loading: true,
 	};
 
@@ -44,8 +43,6 @@ class Admin extends Component {
 				return <PageMissions currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
 			case 5:
 				return <PageBilan currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
-			case 6:
-				return <PageTestimonials currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
 			default:
 				return null;
 		}
