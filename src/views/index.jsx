@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 //Utils
 import { Route, Switch } from "react-router-dom";
@@ -7,70 +7,56 @@ import { Route, Switch } from "react-router-dom";
 import Header from "../components/Navbar";
 import Footer from "../components/Footer";
 
-//Services
-import { NotificationService } from "../services/NotificationService";
-
 //Pages
 import PageHome from "./home";
 import PageProfile from "./profile";
 import PageEnterprise from "./enterprise";
-import PageMissions from "./pages/missions";
+import PageMissions from "./missions";
 import PageBilan from "./bilan";
 
-class Admin extends Component {
-	state = {
-		currentPage: 5,
-		loading: true,
+export default function Layout() {
+	const [currentPage, setCurrentPage] = useState(4);
+
+	const handleReturnPage = (newPage) => {
+		setCurrentPage(newPage);
 	};
 
-	componentDidMount() {
-		NotificationService.call("success", "Bonjour", "Soyez le/la bienvenue !");
-	}
-
-	handleReturnPage = (newPage) => {
-		this.setState({ currentPage: newPage });
-	};
-
-	switchPage = () => {
-		switch (this.state.currentPage) {
+	const switchPage = () => {
+		switch (currentPage) {
 			case 1:
-				return <PageHome currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageHome currentPage={currentPage} returnPage={handleReturnPage} />;
 			case 2:
-				return <PageProfile currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageProfile currentPage={currentPage} returnPage={handleReturnPage} />;
 			case 3:
-				return <PageEnterprise currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageEnterprise currentPage={currentPage} returnPage={handleReturnPage} />;
 			case 4:
-				return <PageMissions currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageMissions currentPage={currentPage} returnPage={handleReturnPage} />;
 			case 5:
-				return <PageBilan currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />;
+				return <PageBilan currentPage={currentPage} returnPage={handleReturnPage} />;
 			default:
 				return null;
 		}
 	};
 
-	render() {
-		return (
-			<Switch>
-				<Route exact path='/'>
-					<div className='page-scroll'>
-						<div
-							className='page-container bg-move-effect theme-style-dark animated transition-flip-in-right'
-							data-animation='transition-flip-in-right'>
-							<Header currentPage={this.state.currentPage} returnPage={this.handleReturnPage} />
-							<div className='site-main'>
-								<div className='single-page-content'>
-									<div className='content-area'>
-										<div className='fw-container'>{this.switchPage()}</div>
-									</div>
+	return (
+		<Switch>
+			<Route exact path='/'>
+				<div className='page-scroll'>
+					<div
+						className='page-container theme-style-dark animated transition-flip-in-right'
+						data-animation='transition-flip-in-right'>
+						<Header currentPage={currentPage} returnPage={handleReturnPage} />
+						<div className='site-main'>
+							<div className='single-page-content'>
+								<div className='content-area'>
+									<div className='fw-container'>{switchPage()}</div>
 								</div>
 							</div>
-							<Footer />
 						</div>
+						<Footer />
 					</div>
-				</Route>
-			</Switch>
-		);
-	}
+				</div>
+			</Route>
+		</Switch>
+	);
 }
-
-export default Admin;

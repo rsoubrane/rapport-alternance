@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //Reactstrap Components
-import { Row, Col, ButtonGroup, Button } from "reactstrap";
+import { Row, ButtonGroup, Button } from "reactstrap";
 
 //Data
 import {
@@ -18,9 +18,11 @@ import Timeline from "./tabs/Timeline";
 import Objectives from "./tabs/Objectives";
 import Position from "./tabs/Position";
 import Values from "./tabs/Values";
-import PolesFD from "./tabs/PolesFD";
-import DescriptionFD from "./tabs/DescriptionFD";
-import ObjectivesFD from "./tabs/ObjectivesFD";
+
+//Sections
+import PolesFD from "./sections/PolesFD";
+import DescriptionFD from "./sections/DescriptionFD";
+import ObjectivesFD from "./sections/ObjectivesFD";
 
 //Components
 import HeaderEnterprise from "./components/Header";
@@ -56,7 +58,7 @@ export default function PageEnterprise({ returnPage }) {
 		<>
 			<Details isOpen={isModalOpen} closeModal={handleModal} />
 
-			<article className='page type-page'>
+			<article className='page type-page pt-page-rotateCarouselLeftIn'>
 				<div className='entry-content'>
 					<div className='fw-page-builder-content'>
 						<HeaderEnterprise returnClick={handleModal} />

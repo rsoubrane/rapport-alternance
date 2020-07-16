@@ -4,10 +4,9 @@ import React, { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 
 //Components
-import DownloadCV from "../components/DownloadCV";
+import DownloadCV from "../../components/DownloadCV";
 
 //Assets
-import logoFree from "../../assets/img/Logo Free.png";
 import logoFD from "../../assets/img/free/fd_white.png";
 import Pym from "../../assets/img/projects/pym.png";
 import TheMask from "../../assets/img/projects/the_mask.png";
@@ -16,7 +15,7 @@ export default function PageHome({ returnPage }) {
 	const [seeMore, setSeeMore] = useState(false);
 
 	return (
-		<Row>
+		<Row className='pt-page-rotateSlideIn'>
 			<Col xs='12' sm='12'>
 				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 					<div className='home-content with-photo'>
@@ -62,13 +61,13 @@ export default function PageHome({ returnPage }) {
 														</div>
 														<div>
 															<div className='missions d-inline-flex'>
-																<a href='#' onClick={() => returnPage(4)}>
+																<a href='/#' onClick={() => returnPage(4)}>
 																	<img src={TheMask} alt='TheMask' />
 																</a>
-																<a href='#' onClick={() => returnPage(4)}>
+																<a href='/#' onClick={() => returnPage(4)}>
 																	Jarvis
 																</a>
-																<a href='#' onClick={() => returnPage(4)}>
+																<a href='/#' onClick={() => returnPage(4)}>
 																	<img src={Pym} alt='Pym' />
 																</a>
 															</div>
@@ -96,7 +95,7 @@ export default function PageHome({ returnPage }) {
 									</p>
 									<div className='home-buttons'>
 										<a
-											href='#'
+											href='/#'
 											onClick={() => setSeeMore(!seeMore)}
 											className='btn btn-primary d-none d-md-inline-block'>
 											{!seeMore ? "En savoir plus" : "En savoir moins"}

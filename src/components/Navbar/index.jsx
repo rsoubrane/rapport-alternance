@@ -1,59 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+
+//Reactstrap Components
+import { Collapse, Navbar as MyNavbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
 export default function Navbar({ currentPage, returnPage }) {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleNavbar = () => setIsOpen(!isOpen);
+
+	const changePage = (newPage) => {
+		setIsOpen(false);
+		returnPage(newPage);
+	};
+
 	return (
-		<header id='site_header' className='header'>
-			<div className='header-content clearfix'>
-				<div className='text-logo'>
-					<a href='#' onClick={() => returnPage(1)}>
+		<MyNavbar className='header' color='faded' dark expand='md'>
+			<div className='header-content'>
+				<NavbarBrand href='/' className='text-logo'>
+					<a href='/#' onClick={() => changePage(1)}>
 						<div className='logo-symbol'>RS</div>
 						<div className='logo-text'>
 							Romain <span>Soubrane</span>
 						</div>
 					</a>
-				</div>
-
-				<div className='site-nav animate mobile-menu-hide'>
-					<ul id='menu-classic-menu' className='leven-classic-menu site-main-menu'>
-						<li
-							className={`${
-								currentPage === 2 ? "current-menu-item" : ""
-							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
-							<a href='#' onClick={() => returnPage(2)} data-hover='1'>
+				</NavbarBrand>
+				<NavbarToggler onClick={toggleNavbar} />
+				<Collapse isOpen={isOpen} navbar className='site-nav animate'>
+					<Nav navbar className='site-main-menu'>
+						<NavItem className={`${currentPage === 2 ? "current-menu-item" : ""}`}>
+							<NavLink href='/#' onClick={() => changePage(2)} data-hover='1'>
 								Profil
-							</a>
-						</li>
-						<li
-							className={`${
-								currentPage === 3 ? "current-menu-item" : ""
-							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
-							<a href='#' onClick={() => returnPage(3)} data-hover='1'>
+							</NavLink>
+						</NavItem>
+						<NavItem className={`${currentPage === 3 ? "current-menu-item" : ""}`}>
+							<NavLink href='/#' onClick={() => changePage(3)} data-hover='1'>
 								Entreprise
-							</a>
-						</li>
-						<li
-							className={`${
-								currentPage === 4 ? "current-menu-item" : ""
-							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
-							<a href='#' onClick={() => returnPage(4)} data-hover='1'>
+							</NavLink>
+						</NavItem>
+						<NavItem className={`${currentPage === 4 ? "current-menu-item" : ""}`}>
+							<NavLink href='/#' onClick={() => changePage(4)} data-hover='1'>
 								Missions
-							</a>
-						</li>
-						<li
-							className={`${
-								currentPage === 5 ? "current-menu-item" : ""
-							} menu-item menu-item-type-post_type menu-item-object-page menu-item-home`}>
-							<a href='#' onClick={() => returnPage(5)} data-hover='1'>
+							</NavLink>
+						</NavItem>
+						<NavItem className={`${currentPage === 5 ? "current-menu-item" : ""}`}>
+							<NavLink href='/#' onClick={() => changePage(5)} data-hover='1'>
 								Bilan
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<a className='menu-toggle mobile-visible'>
-					<i className='fas fa-bars'></i>
-				</a>
+							</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
 			</div>
-		</header>
+		</MyNavbar>
 	);
 }

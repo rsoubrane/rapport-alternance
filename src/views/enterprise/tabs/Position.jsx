@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import { Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "../components/BlockTitle";
+import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
 import FAI from "../../../assets/img/data/FAI.png";
@@ -25,7 +25,7 @@ export default function Position({ title }) {
 						<img src={FAI} alt='FAI' className='w-100' />
 					</Fade>
 				</Col>
-				<Col xs='12' sm='6' className='my-3' className='w-100'>
+				<Col xs='12' sm='6' className='my-3 w-100'>
 					<Fade delay={100}>
 						<h3>Mobile (2019)</h3>
 						<img src={Mobile} alt='Mobile' className='w-100' />

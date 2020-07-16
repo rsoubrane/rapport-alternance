@@ -4,7 +4,7 @@ import React from "react";
 import { Row, Col, Modal, ModalBody } from "reactstrap";
 
 //Components
-import Spacer from "./Spacer";
+import Spacer from "../../../components/Utils/Spacer";
 
 //Assets
 import Iliad from "../../../assets/img/free/iliad2.jpg";
@@ -32,7 +32,7 @@ export default function Details({ isOpen, closeModal }) {
 						<div className='details-page-wrapper'>
 							<nav className='details-page-nav'>
 								<div className='nav-item'>
-									<a href='#' onClick={closeModal}>
+									<a href='/#' onClick={closeModal}>
 										<i className='fa fa-times'></i>
 									</a>
 								</div>
@@ -46,7 +46,7 @@ export default function Details({ isOpen, closeModal }) {
 								<Col sm='12'>
 									<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 										<div className='single-image '>
-											<a href='#'>
+											<a href='/#'>
 												<img src={Iliad} className='w-100' alt='Boutique' />
 											</a>
 										</div>
@@ -56,7 +56,7 @@ export default function Details({ isOpen, closeModal }) {
 											le groupe est présent en France mais aussi au Maroc et en Italie. Le groupe
 											Iliad se spécialise surtout dans la téléphonie mobile et l'internet fixe.
 										</h4>
-										<Spacer />
+										<Spacer padding='20px' />
 										<Row>
 											<Col xs='12'>
 												<h1 className='mt-5'>Quelle est l'histoire du groupe Iliad ?</h1>
@@ -79,7 +79,7 @@ export default function Details({ isOpen, closeModal }) {
 												</p>
 											</Col>
 										</Row>
-										<Spacer />
+										<Spacer padding='20px' />
 										<Row className='align-items-center'>
 											<Col xs='12' md='8'>
 												<h1>Iliad fournisseur d'accès à Internet avec Free</h1>
@@ -110,7 +110,7 @@ export default function Details({ isOpen, closeModal }) {
 												<img src={Free} alt='Minitel' />
 											</Col>
 										</Row>
-										<Spacer />
+										<Spacer padding='20px' />
 										<Row>
 											<Col xs='12'>
 												<h1>Un groupe en constante innovation</h1>
@@ -137,7 +137,7 @@ export default function Details({ isOpen, closeModal }) {
 											</Col>
 										</Row>
 
-										<Spacer />
+										<Spacer padding='20px' />
 										<h1>Iliad et la téléphonie mobile</h1>
 										<Row>
 											<Col xs='12' md='6'>
@@ -182,7 +182,7 @@ export default function Details({ isOpen, closeModal }) {
 											</Col>
 										</Row>
 
-										<Spacer />
+										<Spacer padding='20px' />
 
 										<h1>Les différentes entités du groupe iliad</h1>
 										<Row className='align-items-start'>

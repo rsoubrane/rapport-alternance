@@ -1,21 +1,16 @@
-//Custom
-@import "custom/variables";
-@import "custom/buttons";
-@import "custom/utils";
-
-// Components
-@import "components/loaders";
-@import "components/header";
-@import "components/timeline";
-
 //Theme
 @import "theme/variables";
 @import "theme/animations";
-@import "theme/icons";
 @import "theme/admin";
+
+//Custom
+@import "custom/buttons";
+@import "custom/timeline";
+@import "custom/utils";
 
 // Views
 @import "views/home";
 @import "views/profile";
 @import "views/enterprise";
+@import "views/missions";
 @import "views/bilan";

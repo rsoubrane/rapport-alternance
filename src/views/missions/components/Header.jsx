@@ -3,7 +3,7 @@ import React from "react";
 //Reactstrap Components
 import { Row, Col } from "reactstrap";
 
-export default function HeaderBilan() {
+export default function HeaderMissions() {
 	return (
 		<div className='fw-page-builder-content'>
 			<Row className='align-items-center'>
@@ -13,12 +13,10 @@ export default function HeaderBilan() {
 							<div className='start-page-full-width'>
 								<div className='inner-content'>
 									<div className='hp-text-block'>
-										<h2 className='hp-main-title'>Bilan et perspectives</h2>
+										<h2 className='hp-main-title'>Missions</h2>
 
 										<p className='text-justify'>
-											Après plusieurs mois passés au sein du pôle R&D de Free Distribution, il est
-											déjà temps pour moi d'en tirer les premières conclusions positives ou
-											négati... Pour le coup elle sont toutes positives !
+											J'ai eu l'occasion de travailler sur plusieurs projets radicalement différents durant cette année d'alternance. Laissez moi vous parler de ceux ci !
 										</p>
 									</div>
 								</div>

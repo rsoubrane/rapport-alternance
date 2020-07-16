@@ -1,7 +1,7 @@
 import React from "react";
 
 //Reactstrap Components
-import { Row, Col, Button } from "reactstrap";
+import { Col } from "reactstrap";
 
 export default function HeaderEnterprise({ currentTab, returnClick }) {
 	return (
@@ -21,25 +21,25 @@ export default function HeaderEnterprise({ currentTab, returnClick }) {
 
 								<div className='hp-buttons'>
 									<a
-										href='#'
+										href='/#'
 										className={`btn btn-primary ${currentTab === 1 ? "active" : ""}`}
 										onClick={() => returnClick(1)}>
 										Free Distribution ?
 									</a>
 									<a
-										href='#'
+										href='/#'
 										className={`btn btn-primary ${currentTab === 2 ? "active" : ""}`}
 										onClick={() => returnClick(2)}>
 										Chiffres clés
 									</a>
 									<a
-										href='#'
+										href='/#'
 										className={`btn btn-primary ${currentTab === 3 ? "active" : ""}`}
 										onClick={() => returnClick(3)}>
 										Les pôles
 									</a>
 									<a
-										href='#'
+										href='/#'
 										className={`btn btn-primary ${currentTab === 4 ? "active" : ""}`}
 										onClick={() => returnClick(4)}>
 										Objectifs et valeurs

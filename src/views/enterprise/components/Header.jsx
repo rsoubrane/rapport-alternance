@@ -20,7 +20,10 @@ export default function HeaderEnterprise({ returnClick }) {
 
 													<p>
 														Le 18 février 1999, Xavier Niel lance{" "}
-														<a href='https://free.fr' target='_blank'>
+														<a
+															href='https://free.fr'
+															target='_blank'
+															rel='noopener noreferrer'>
 															Free
 														</a>
 														, une entreprise filiale du groupe Iliad. Il s'agit d'un
@@ -36,7 +39,7 @@ export default function HeaderEnterprise({ returnClick }) {
 
 													<div className='hp-buttons'>
 														<a
-															href='#'
+															href='/#'
 															className='btn btn-primary'
 															onClick={() => returnClick()}>
 															En savoir plus sur le groupe Iliad

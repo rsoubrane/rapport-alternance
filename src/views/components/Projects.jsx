@@ -29,7 +29,7 @@ export default function Projects({ title, data }) {
 											style={{ width: "294px", marginRight: "10px" }}
 											key={project.id}>
 											<div className='client-block'>
-												<a href='#' title={project.title}>
+												<a href='/#' title={project.title}>
 													{project.imgSrc ? (
 														<img src={project.imgSrc} alt={project.title} />
 													) : (
@@ -45,7 +45,7 @@ export default function Projects({ title, data }) {
 				</div>
 			</div>
 
-			<Spacer />
+			<Spacer padding='20px' />
 		</>
 	);
 }

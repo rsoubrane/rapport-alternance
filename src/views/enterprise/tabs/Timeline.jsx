@@ -4,7 +4,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 //Components
-import BlockTitle from "../components/BlockTitle";
+import BlockTitle from "../../../components/Utils/BlockTitle";
 
 export default function Timeline({ title, data }) {
 	return (
@@ -18,7 +18,9 @@ export default function Timeline({ title, data }) {
 								return (
 									<Col xs='6' md='2' className='timeline' key={x.id}>
 										<span className='timeline-icon'>
-											<a className='fa'>{x.date}</a>
+											<a href='/#' className='fa'>
+												{x.date}
+											</a>
 										</span>
 										<div className='border'></div>
 										<div className='timeline-content text-center'>

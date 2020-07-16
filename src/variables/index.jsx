@@ -9,6 +9,10 @@ import Google from "../assets/img/certifications/digital-active.jpg";
 import React from "../assets/img/certifications/react.jpg";
 import ReactNative from "../assets/img/certifications/react-native.jpg";
 
+import ProjectPym from "../assets/img/projects/proj_pym.png";
+import ProjectTheMask from "../assets/img/projects/proj_mask.png";
+import ProjectJarvis from "../assets/img/projects/proj_jarvis.png";
+
 import Harry from "../assets/img/profile/harry.jpg";
 import Kirthy from "../assets/img/profile/kirthy.jpg";
 import Free from "../assets/img/free/BGDefault.png";
@@ -218,9 +222,9 @@ export const ValuesFree = [
 export const FunFacts = [
 	{
 		id: 0,
-		title: "Happy Clients",
-		icon: "heart",
-		value: 578,
+		title: "Projets",
+		icon: "tasks",
+		value: 3,
 	},
 	{
 		id: 1,
@@ -230,25 +234,25 @@ export const FunFacts = [
 	},
 	{
 		id: 2,
-		title: "Projets",
-		icon: "tasks",
-		value: 3,
-	},
-	{
-		id: 3,
 		title: "Cafés consommés",
 		icon: "coffee",
 		value: "1.475",
 	},
+	{
+		id: 3,
+		title: "Lignes de code",
+		icon: "laptop-code",
+		value: "87.912",
+	},
 ];
 
+// Profile
 export const Projects = [
 	{ id: 0, title: "Pym", imgSrc: Pym },
 	{ id: 1, title: "The Mask", imgSrc: TheMask },
 	{ id: 2, title: "Jarvis" },
 ];
 
-// Profile
 export const Abilities = [
 	{
 		id: 0,
@@ -424,6 +428,32 @@ export const Experiences = [
 	},
 ];
 
+//Missions
+export const ProjectsDetails = [
+	{
+		id: 0,
+		img: ProjectPym,
+		title: "Pym",
+		description:
+			"Pym est un outil de sondage, d'évaluations, de quizs en live et d'analyse de réponses. Il est né de la nécessité d'avoir les réponses centralisé et surtout hébergées par Free et non une entreprise tierce.",
+	},
+	{
+		id: 1,
+		img: ProjectTheMask,
+		title: "The Mask",
+		description:
+			"The Mask est un outil de gestion de stocks de différents produits. Ce projet est issu d'une nécessité réelle d'assurer un suivi de ces stocks durant le Covid. Il a pour vocation a être utilisé à des fins plus marketing.",
+	},
+	{
+		id: 2,
+		img: ProjectJarvis,
+		title: "Jarvis",
+		description:
+			"Jarvis est un outil de ticketing et d'administration pour les entités de F Distribution. Il permet de centraliser toutes les demandes réalisées à ces dernières afin d'en simplifier la résolution et de permettre un gain de temps considérable.",
+	},
+];
+
+//Bilan
 export const Testimonials = [
 	{
 		id: 0,

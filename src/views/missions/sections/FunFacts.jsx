@@ -10,7 +10,7 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 import Spacer from "../../../components/Utils/Spacer";
 
-export default function KeyPoints({ title, data }) {
+export default function FunFacts({ title, data }) {
 	const returnDelay = (delay) => {
 		return parseInt(100 * delay);
 	};
