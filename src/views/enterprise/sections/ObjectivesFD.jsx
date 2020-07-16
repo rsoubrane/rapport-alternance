@@ -7,7 +7,7 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
-import Boutique from "../../../assets/img/free/boutique.jpg";
+import Boutique from "../../../assets/img/free/boutique.webp";
 
 export default function ObjectivesFD({ title, returnPage }) {
 	return (

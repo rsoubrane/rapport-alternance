@@ -10,8 +10,8 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
-import FAI from "../../../assets/img/data/FAI.png";
-import Mobile from "../../../assets/img/data/Mobile.png";
+import FAI from "../../../assets/img/data/FAI.webp";
+import Mobile from "../../../assets/img/data/Mobile.webp";
 
 export default function Position({ title }) {
 	return (

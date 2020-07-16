@@ -7,8 +7,8 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
-import Xavier from "../../../assets/img/free/xavier.png";
-import LogoFD from "../../../assets/img/free/fd_white.png";
+import Xavier from "../../../assets/img/free/xavier.webp";
+import LogoFD from "../../../assets/img/free/fd_white.webp";
 
 export default function DescriptionFD({ title }) {
 	return (

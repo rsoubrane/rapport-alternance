@@ -7,9 +7,9 @@ import { Row, Col, Modal, ModalBody } from "reactstrap";
 import Spacer from "../../../components/Utils/Spacer";
 
 //Assets
-import Iliad from "../../../assets/img/free/iliad2.jpg";
-import Free from "../../../assets/img/free/free2.jpg";
-import Forfaits from "../../../assets/img/free/forfaits-mobiles.png";
+import Iliad from "../../../assets/img/free/iliad2.webp";
+import Free from "../../../assets/img/free/free2.webp";
+import Forfaits from "../../../assets/img/free/forfaits-mobiles.webp";
 
 export default function Details({ isOpen, closeModal }) {
 	const toggle = () => {

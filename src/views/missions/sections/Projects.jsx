@@ -30,6 +30,7 @@ export default function Missions({ title, data }) {
 					  })
 					: null}
 			</Row>
+			<Row></Row>
 		</>
 	);
 }

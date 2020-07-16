@@ -7,15 +7,15 @@ import { Row, Col, Container } from "reactstrap";
 import DownloadCV from "../../components/DownloadCV";
 
 //Assets
-import logoFD from "../../assets/img/free/fd_white.png";
-import Pym from "../../assets/img/projects/pym.png";
-import TheMask from "../../assets/img/projects/the_mask.png";
+import logoFD from "../../assets/img/free/fd_white.webp";
+import Pym from "../../assets/img/projects/pym.webp";
+import TheMask from "../../assets/img/projects/the_mask.webp";
 
 export default function PageHome({ returnPage }) {
 	const [seeMore, setSeeMore] = useState(false);
 
 	return (
-		<Row className='pt-page-rotateSlideIn'>
+		<Row className='pt-page-scaleUpCenter'>
 			<Col xs='12' sm='12'>
 				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 					<div className='home-content with-photo'>

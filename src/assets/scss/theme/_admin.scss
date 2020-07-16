@@ -22,27 +22,6 @@
 .text-logo a:focus {
 	outline: 0;
 }
-.logo-symbol {
-	float: left;
-	width: 44px;
-	height: 44px;
-	line-height: 44px;
-	background-color: #7066ff;
-	border-radius: 100px;
-	text-align: center;
-	color: #fff;
-	font-size: 28px;
-	font-weight: 800;
-	margin-right: 8px;
-	margin-top: 4px;
-}
-.logo-text {
-	float: left;
-	line-height: 50px;
-	font-size: 20px;
-	color: #222;
-	font-weight: 600;
-}
 .logo-text span {
 	font-weight: 400;
 }
@@ -258,45 +237,6 @@ ul.social-links li:last-child a {
 	max-width: 80px;
 	margin: 0 auto;
 }
-.projects.owl-carousel .client-block {
-	padding: 10px 15px 15px;
-	margin-bottom: 15px;
-}
-.projects.owl-carousel .owl-item img {
-	display: block;
-	width: 100%;
-	max-width: 100px;
-}
-.projects.owl-carousel .owl-dots {
-	position: relative;
-	width: 100%;
-	text-align: center;
-}
-.projects.owl-carousel .owl-dot {
-	display: inline-block;
-	margin: 3px 0;
-}
-.projects.owl-carousel .owl-dot span {
-	display: block;
-	height: 3px;
-	background-color: #d5d5d5;
-	border-radius: 3px;
-	margin: 4px;
-	width: 20px;
-	-webkit-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-}
-.projects.owl-carousel .owl-dot.active span,
-.projects.owl-carousel .owl-dot:hover span {
-	background-color: #7066ff;
-}
-.projects.owl-carousel .owl-dot.active span {
-	background-color: #7066ff;
-	width: 30px;
-}
 .lm-info-block {
 	position: relative;
 	text-align: center;
@@ -358,48 +298,6 @@ ul.social-links li:last-child a {
 }
 .lm-info-block-text {
 	display: block;
-}
-.projects.owl-carousel .owl-nav {
-	position: absolute;
-	text-align: right;
-	right: 0;
-	bottom: 5px;
-}
-.projects.owl-carousel .owl-nav .owl-prev {
-	margin-right: 3px;
-}
-.projects.owl-carousel .owl-nav .owl-next,
-.projects.owl-carousel .owl-nav .owl-prev {
-	display: inline-block;
-	background-color: #fff;
-	border: 1px solid #e5e5e5;
-	-webkit-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-}
-.projects.owl-carousel .owl-nav .owl-next:hover,
-.projects.owl-carousel .owl-nav .owl-prev:hover {
-	color: #fff;
-	background-color: #7066ff;
-	border-color: #7066ff;
-}
-.projects.owl-carousel .owl-nav .owl-next:before,
-.projects.owl-carousel .owl-nav .owl-prev:before {
-	position: relative;
-	margin: 2px;
-	width: 22px;
-	height: 22px;
-	font-family: FontAwesome;
-	font-size: 18px;
-	line-height: 22px;
-	text-align: center;
-	display: block;
-	cursor: pointer;
-}
-.projects.owl-carousel .owl-nav .owl-prev:before {
-	content: "\f104";
-}
-.projects.owl-carousel .owl-nav .owl-next:before {
-	content: "\f105";
 }
 .single-page-content .content-area {
 	position: relative;
@@ -844,14 +742,6 @@ ul.social-links li a:hover {
 	background-color: #ff724c;
 	border-color: transparent;
 }
-.theme-style-dark .projects.owl-carousel .owl-nav .owl-next,
-.theme-style-dark .projects.owl-carousel .owl-nav .owl-prev {
-	background-color: #555;
-	border-color: #333;
-}
-.projects.owl-carousel .owl-dot span {
-	background-color: #454545;
-}
 .mobile-header {
 	background-color: #222;
 	border-color: #444;
@@ -961,21 +851,6 @@ h6 {
 .btn-primary {
 	font-family: Poppins, Helvetica, sans-serif;
 }
-body {
-	background-color: #007ced;
-}
-.block-title h2:after,
-.btn-primary:focus,
-.btn-primary:hover,
-.projects.owl-carousel .owl-dot.active span,
-.projects.owl-carousel .owl-dot:hover span,
-.projects.owl-carousel .owl-nav .owl-next:hover,
-.projects.owl-carousel .owl-nav .owl-prev:hover,
-.header .social-links a:hover,
-.info-list li .title:after,
-.logo-symbol {
-	background-color: #007ced;
-}
 .block-title h3 span,
 .entry-title a:hover,
 .info-block-w-icon i,
@@ -993,8 +868,6 @@ a:hover {
 .btn-primary,
 .btn-primary:focus,
 .btn-primary:hover,
-.projects.owl-carousel .owl-nav .owl-next:hover,
-.projects.owl-carousel .owl-nav .owl-prev:hover,
 .logo-symbol,
 .page-links a:hover {
 	border-color: #007ced;
@@ -1189,7 +1062,7 @@ body {
 	background-color: #333;
 }
 #content-background .start-page-full-width .hp-text-block {
-	background: url("../../img/free/BGDefault.png");
+	background: url("../../img/free/BGDefault.webp");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1248,7 +1121,7 @@ body {
 	width: 44px;
 	height: 44px;
 	line-height: 44px;
-	background-color: #7066ff;
+	background-color: #007ced;
 	border-radius: 100px;
 	text-align: center;
 	color: #fff;
@@ -1256,6 +1129,11 @@ body {
 	font-weight: 800;
 	margin-right: 8px;
 	margin-top: 4px;
+}
+@media only screen and (max-width: 768px) {
+	.logo-symbol {
+		color: #000 !important;
+	}
 }
 .logo-text {
 	float: left;
@@ -2278,9 +2156,6 @@ h6 {
 }
 .btn-primary {
 	font-family: Poppins, Helvetica, sans-serif;
-}
-body {
-	background-color: #007ced;
 }
 .btn-primary:focus,
 .btn-primary:hover,

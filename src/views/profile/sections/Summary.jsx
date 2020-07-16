@@ -7,7 +7,7 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
-import Profile from "../../../assets/img/profile/romain.jpg";
+import Profile from "../../../assets/img/profile/romain.webp";
 
 //Data
 import { Abilities } from "../../../variables";

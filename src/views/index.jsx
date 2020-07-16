@@ -15,7 +15,7 @@ import PageMissions from "./missions";
 import PageBilan from "./bilan";
 
 export default function Layout() {
-	const [currentPage, setCurrentPage] = useState(4);
+	const [currentPage, setCurrentPage] = useState(1);
 
 	const handleReturnPage = (newPage) => {
 		setCurrentPage(newPage);

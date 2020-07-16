@@ -1,23 +1,23 @@
 //Assets
-import Pym from "../assets/img/projects/pym.png";
-import TheMask from "../assets/img/projects/the_mask.png";
+import Pym from "../assets/img/projects/pym.webp";
+import TheMask from "../assets/img/projects/the_mask.webp";
 
-import Technical from "../assets/img/icons/creativity_icon.png";
-import Management from "../assets/img/icons/advertising_icon.png";
-import Others from "../assets/img/icons/web_design_icon.png";
-import Google from "../assets/img/certifications/digital-active.jpg";
-import React from "../assets/img/certifications/react.jpg";
-import ReactNative from "../assets/img/certifications/react-native.jpg";
+import Technical from "../assets/img/icons/creativity_icon.webp";
+import Management from "../assets/img/icons/advertising_icon.webp";
+import Others from "../assets/img/icons/web_design_icon.webp";
+import Google from "../assets/img/certifications/digital-active.webp";
+import React from "../assets/img/certifications/react.webp";
+import ReactNative from "../assets/img/certifications/react-native.webp";
 
-import ProjectPym from "../assets/img/projects/proj_pym.png";
-import ProjectTheMask from "../assets/img/projects/proj_mask.png";
-import ProjectJarvis from "../assets/img/projects/proj_jarvis.png";
+import ProjectPym from "../assets/img/projects/proj_pym.webp";
+import ProjectTheMask from "../assets/img/projects/proj_mask.webp";
+import ProjectJarvis from "../assets/img/projects/proj_jarvis.webp";
 
-import Harry from "../assets/img/profile/harry.jpg";
-import Kirthy from "../assets/img/profile/kirthy.jpg";
-import Free from "../assets/img/free/BGDefault.png";
-import Team from "../assets/img/others/team.jpg";
-import ESD from "../assets/img/others/esd.jpg";
+import Harry from "../assets/img/profile/harry.webp";
+import Kirthy from "../assets/img/profile/kirthy.webp";
+import Free from "../assets/img/free/BGDefault.webp";
+import Team from "../assets/img/others/team.webp";
+import ESD from "../assets/img/others/esd.webp";
 
 export const KeyFiguresEnterprise = [
 	{
