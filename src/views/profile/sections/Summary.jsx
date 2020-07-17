@@ -98,7 +98,6 @@ export default function TabSummary() {
 
 					{Abilities
 						? Abilities.map((skill) => {
-								console.log("skill: ", skill);
 								return (
 									<Col xs='12' md='4' className='align-items-stretch mt-3 mt-md-0' key={skill.id}>
 										<div className='service-block'>

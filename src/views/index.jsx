@@ -18,6 +18,7 @@ export default function Layout() {
 	const [currentPage, setCurrentPage] = useState(1);
 
 	const handleReturnPage = (newPage) => {
+		window.scrollTo({ top: -100, behavior: "smooth" });
 		setCurrentPage(newPage);
 	};
 

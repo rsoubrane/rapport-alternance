@@ -18,9 +18,7 @@ export default function Timeline({ title, data }) {
 								return (
 									<Col xs='6' md='2' className='timeline' key={x.id}>
 										<span className='timeline-icon'>
-											<a href='/#' className='fa'>
-												{x.date}
-											</a>
+											<p>{x.date}</p>
 										</span>
 										<div className='border'></div>
 										<div className='timeline-content text-center'>

@@ -32,7 +32,7 @@
 		background: #f9f9f9;
 	}
 
-	.timeline-icon a {
+	.timeline-icon p {
 		font-family: Poppins !important;
 		width: 75px;
 		height: 75px;
@@ -42,12 +42,14 @@
 		font-size: 25px;
 		color: #fff;
 		transition: all 0.3s ease 0s;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
-	.timeline:hover .timeline-icon a {
+	.timeline:hover .timeline-icon p {
 		color: #888;
 		background: #f9f9f9;
-		animation: icon-load 4.5s ease 0s;
 	}
 
 	.border {

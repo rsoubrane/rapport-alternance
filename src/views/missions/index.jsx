@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Components
 import HeaderMissions from "./components/Header";
@@ -13,6 +13,10 @@ import Technologies from "./sections/Technologies";
 import { FunFacts as MyFunFacts, ProjectsDetails, Technologies as MyTechnologies } from "../../data";
 
 export default function PageMissions() {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
 	return (
 		<article className='page type-page pt-page-scaleUpCenter'>
 			<div className='entry-content'>

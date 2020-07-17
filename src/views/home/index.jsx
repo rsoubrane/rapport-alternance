@@ -55,6 +55,7 @@ export default function PageHome({ returnPage }) {
 						<Col xs='12' className='my-3'>
 							<div className='details text-center'>
 								<FontAwesomeIcon icon={faCalendarAlt} className='mr-2' /> Novembre 2019 - Septembre 2020
+								<br />
 								<FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' /> Siège Social - 8 Rue de la
 								ville-L'Évêque, 75008 Paris
 							</div>
