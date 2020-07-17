@@ -16,56 +16,50 @@ export default function PageHome({ returnPage }) {
 	return (
 		<Row className='pt-page-scaleUpCenter'>
 			<Col xs='12' sm='12'>
-				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-					<div className='home-content with-photo'>
-						<Row className='flex-v-align'>
-							<Col xs='12' md='5'>
-								<div className='home-text'>
-									<h1>Rapport d'Alternance</h1>
-									<p>
-										Ce site réalisé en React et Sass a pour vocation de faire un retour d'expérience
-										de mon année d'alternance chez Free en tant que développeur web !
-									</p>
-									<p className='mt-3 mt-md-0'>
-										Ce sont des technologies que j'ai utilisé de manière qutodienne et je suis ravi
-										de pouvoir les mettre à profit du développement de ce site.
-									</p>
-									<div className='home-buttons'>
-										<a
-											href='/#'
-											onClick={() => setSeeMore(!seeMore)}
-											className='btn btn-primary d-none d-md-inline-block'>
-											{!seeMore ? "En savoir plus" : "En savoir moins"}
-										</a>
-										<DownloadCV />
-									</div>
+				<div className='home-content with-photo'>
+					<Row className='flex-v-align'>
+						<Col xs='12' md='5'>
+							<div className='home-text'>
+								<h1>Rapport d'Alternance</h1>
+								<p>
+									Ce site réalisé en React et Sass a pour vocation de faire un retour d'expérience de
+									mon année d'alternance chez Free en tant que développeur web !
+								</p>
+								<p className='mt-3 mt-md-0'>
+									Ce sont des technologies que j'ai utilisé de manière qutodienne et je suis ravi de
+									pouvoir les mettre à profit du développement de ce site.
+								</p>
+								<div className='home-buttons'>
+									<a
+										href='/#'
+										onClick={() => setSeeMore(!seeMore)}
+										className='btn btn-primary d-none d-md-inline-block'>
+										{!seeMore ? "En savoir plus" : "En savoir moins"}
+									</a>
+									<DownloadCV />
 								</div>
-							</Col>
-							<Card seeMore={seeMore} returnPage={returnPage} />
-						</Row>
+							</div>
+						</Col>
+						<Card seeMore={seeMore} returnPage={returnPage} />
+					</Row>
 
-						<Row className='d-md-none mt-5 align-items-center justify-content-center'>
-							<Col xs='12'>
-								<img src={logoFD} alt='Logo Free' className='logo' />
-							</Col>
+					<Row className='d-md-none mt-5 align-items-center justify-content-center'>
+						<Col xs='12'>
+							<img src={logoFD} alt='Logo Free' className='logo' />
+						</Col>
 
-							<Col xs='12' className='my-3'>
-								<div className='details text-center'>
-									<div>
-										<i className='fa fa-calendar-alt mr-2'></i> Novembre 2019 - Septembre 2020
-									</div>
-									<div>
-										<i className='fa fa-map-marker-alt mr-2'></i> Siège Social - 8 Rue de la
-										ville-L'Évêque, 75008 Paris
-									</div>
-								</div>
-							</Col>
+						<Col xs='12' className='my-3'>
+							<div className='details text-center'>
+								<i className='fa fa-calendar-alt mr-2'></i> Novembre 2019 - Septembre 2020
+								<i className='fa fa-map-marker-alt mr-2'></i> Siège Social - 8 Rue de la ville-L'Évêque,
+								75008 Paris
+							</div>
+						</Col>
 
-							<Col xs='12' className='text-center'>
-								<h3 className='font-italic'> "Il a Free, il a tout compris !" </h3>
-							</Col>
-						</Row>
-					</div>
+						<Col xs='12' className='text-center'>
+							<h3 className='font-italic'> "Il a Free, il a tout compris !" </h3>
+						</Col>
+					</Row>
 				</div>
 			</Col>
 		</Row>

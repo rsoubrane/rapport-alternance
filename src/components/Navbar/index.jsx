@@ -14,7 +14,7 @@ export default function Navbar({ currentPage, returnPage }) {
 	};
 
 	return (
-		<MyNavbar className='header' dark expand='md'>
+		<MyNavbar className='header' dark expand='lg'>
 			<div className='header-content'>
 				<NavbarBrand href='/#' className='text-logo' onClick={() => changePage(1)}>
 					<div className='logo-symbol'>RS</div>
@@ -23,7 +23,7 @@ export default function Navbar({ currentPage, returnPage }) {
 					</div>
 				</NavbarBrand>
 				<NavbarToggler onClick={toggleNavbar} />
-				<Collapse isOpen={isOpen} navbar className='site-nav animate'>
+				<Collapse isOpen={isOpen} navbar className={`site-nav ${!isOpen ? "mobile-menu-hide" : ""} animate`}>
 					<Nav navbar className='site-main-menu'>
 						<NavItem className={`${currentPage === 2 ? "current-menu-item" : ""}`}>
 							<NavLink href='/#' onClick={() => changePage(2)} data-hover='1'>

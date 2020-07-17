@@ -18,12 +18,7 @@ export default function PolesFD({ title, data }) {
 				<Row className='px-md-5 h-100'>
 					{data.map((pole) => {
 						return (
-							<Col
-								xs='12'
-								md='4'
-								className='fw-col-inner h-100'
-								data-paddings='0px 0px 0px 0px'
-								key={pole.id}>
+							<Col xs='12' md='4' className='h-100' key={pole.id}>
 								<div className='certificate-item clearfix'>
 									<div className='certi-icon'>
 										<i className={`fa fa-${pole.icon}`}></i>

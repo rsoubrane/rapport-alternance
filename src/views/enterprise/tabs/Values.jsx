@@ -58,24 +58,22 @@ export default function Values({ title, data }) {
 					? data.map((x) => {
 							return (
 								<Col xs='12' sm='3' className='mt-3 mt-md-0' key={x.id}>
-									<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
-										<Zoom delay={200}>
-											<div className={`values-icon-box iconbox-${x.color}`}>
-												<div className='icon'>
-													<svg
-														width='100'
-														height='100'
-														viewBox='0 0 600 600'
-														xmlns='http://www.w3.org/2000/svg'>
-														{switchIconBox(x.color)}
-													</svg>
-													<i className={`fas fa-${x.icon}`}></i>
-												</div>
-												<h4>{x.title}</h4>
-												<p>{x.description}</p>
+									<Zoom delay={200}>
+										<div className={`values-icon-box iconbox-${x.color}`}>
+											<div className='icon'>
+												<svg
+													width='100'
+													height='100'
+													viewBox='0 0 600 600'
+													xmlns='http://www.w3.org/2000/svg'>
+													{switchIconBox(x.color)}
+												</svg>
+												<i className={`fas fa-${x.icon}`}></i>
 											</div>
-										</Zoom>
-									</div>
+											<h4>{x.title}</h4>
+											<p>{x.description}</p>
+										</div>
+									</Zoom>
 								</Col>
 							);
 					  })

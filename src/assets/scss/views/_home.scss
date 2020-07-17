@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+
 .modal-dialog {
 	top: 20%;
 
@@ -9,8 +11,6 @@
 		}
 	}
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
 
 .card-container {
 	.container {
@@ -30,6 +30,7 @@
 		-moz-perspective-origin: right;
 		perspective-origin: right;
 	}
+
 	.card {
 		max-width: 600px;
 		height: 340px;
@@ -61,12 +62,15 @@
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}
+
 	.front {
 		z-index: 11;
 		transition: all 0.6s ease;
+
 		.top {
 			height: 50%;
 			background: #333;
+
 			&:after {
 				position: absolute;
 				content: "";
@@ -79,6 +83,7 @@
 				z-index: 10;
 				background: inherit;
 			}
+
 			.logo {
 				display: inline-block;
 				color: #fff;
@@ -92,6 +97,7 @@
 				padding: 0 30px;
 			}
 		}
+
 		.bottom {
 			position: relative;
 			height: 50%;
@@ -106,7 +112,7 @@
 					color: #333;
 					min-width: 500px;
 					font-weight: 400;
-					font-size: 3.2em;
+					font-size: 2.2em;
 					text-align: center;
 
 					&:after {
@@ -132,6 +138,7 @@
 			}
 		}
 	}
+
 	.back {
 		-webkit-transform: rotateY(-180deg);
 		-moz-transform: rotateY(-180deg);
@@ -147,6 +154,7 @@
 			height: 20%;
 			width: 100%;
 			background: #333 !important;
+
 			img {
 				position: absolute;
 				top: 50%;
@@ -154,6 +162,7 @@
 				transform: translate(-5%, -50%);
 				width: 40%;
 			}
+
 			i {
 				color: #d5d5d5;
 				position: absolute;
@@ -161,6 +170,7 @@
 				top: 50%;
 				right: 5%;
 				transform: translate(-3%, -50%);
+
 				&:hover {
 					color: #007ced;
 				}
@@ -178,7 +188,7 @@
 				padding-top: 0.2em;
 				left: 50%;
 				transform: translateX(-50%);
-				color: rgb(108, 108, 108) !important;
+				color: #6c6c6c !important;
 				font-size: 25px;
 				font-family: "Old Standard TT", serif;
 				font-style: italic;
@@ -242,16 +252,24 @@
 		margin-top: 110px;
 		text-align: center;
 		font-size: 40px;
+
+		span {
+			color: #4e203c;
+			display: block;
+			font-size: 0.45em;
+			letter-spacing: 3px;
+		}
+
+		i {
+			font-style: normal;
+			text-transform: none;
+			font-family: "Playfair Display", serif;
+		}
 	}
-	h1 span {
-		color: #4e203c;
-		display: block;
-		font-size: 0.45em;
-		letter-spacing: 3px;
-	}
-	h1 i {
-		font-style: normal;
-		text-transform: none;
-		font-family: "Playfair Display", serif;
+}
+
+@media only screen and (min-width: 991px) {
+	.card-container .front .bottom .content .name {
+		font-size: 3.2em !important;
 	}
 }

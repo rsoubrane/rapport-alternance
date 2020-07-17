@@ -50,9 +50,8 @@ export default function TabResume() {
 											<div className='certi-title'>
 												<span>
 													<h4>{certification.title}</h4>
-												</span>{" "}
+												</span>
 											</div>
-											<div></div>
 											<div className='certi-date'>
 												<span>{certification.date}</span>-
 												<span className='certi-id'>{certification.issuer}</span>

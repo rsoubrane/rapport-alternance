@@ -151,7 +151,7 @@ export default function Bilan() {
 								à découvrir et apprendre.
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Je suis vraiment motiver à continuer de m'améliorer et à
+								<i className='fa fa-check'></i> Je suis vraiment motivé à continuer de m'améliorer et à
 								monter en compétences (surtout sur la partie back-end)
 							</li>
 						</ul>

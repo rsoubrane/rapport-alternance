@@ -41,20 +41,18 @@ export default function Layout() {
 	return (
 		<Switch>
 			<Route exact path='/'>
-				<div className='page-scroll'>
-					<div
-						className='page-container theme-style-dark animated transition-flip-in-right'
-						data-animation='transition-flip-in-right'>
-						<Header currentPage={currentPage} returnPage={handleReturnPage} />
-						<div className='site-main'>
-							<div className='single-page-content'>
-								<div className='content-area'>
-									<div className='fw-container'>{switchPage()}</div>
-								</div>
+				<div
+					className='page-container theme-style-dark animated transition-flip-in-right'
+					data-animation='transition-flip-in-right'>
+					<Header currentPage={currentPage} returnPage={handleReturnPage} />
+					<div className='site-main'>
+						<div className='single-page-content'>
+							<div className='content-area'>
+								<div className='fw-container'>{switchPage()}</div>
 							</div>
 						</div>
-						<Footer />
 					</div>
+					<Footer />
 				</div>
 			</Route>
 		</Switch>

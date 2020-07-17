@@ -6,7 +6,7 @@ export default function Footer() {
 			<div className='footer-social'>
 				<ul className='footer-social-links'>
 					<li>
-						<a href='https://linkedin.com/rsoubrane' target='_blank' rel='noopener noreferrer'>
+						<a href='https://linkedin.com/in/rsoubrane' target='_blank' rel='noopener noreferrer'>
 							LinkedIn
 						</a>
 					</li>

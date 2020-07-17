@@ -257,7 +257,7 @@ export const FunFacts = [
 		id: 3,
 		title: "Lignes de code",
 		icon: "laptop-code",
-		value: "87.912",
+		value: "37.912",
 	},
 ];
 

@@ -922,33 +922,30 @@ input {
 	}
 }
 
-.sub_menu {
-	button {
-		border-radius: 30px;
-		font-size: 0.875em;
-		line-height: 1 !important;
-		height: 50px;
-		margin-right: 0;
-		width: 100%;
-		min-width: 212px;
+.sub_menu button {
+	border-radius: 30px;
+	font-size: 0.875em;
+	line-height: 1 !important;
+	height: 50px;
+	margin-right: 0;
+	max-width: 150px !important;
+	width: 100%;
 
-		&.btn-primary {
-			background: #ff3232;
-			border: 2px solid #ff3232;
-		}
+	&.btn-primary {
+		background: #ff3232;
+		border: 2px solid #ff3232;
+	}
 
-		&.btn-secondary {
-			background: transparent;
-			color: white;
-			border: 2px solid #ff3232;
-		}
+	&.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid #ff3232;
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	.sub_menu {
-		button {
-			font-size: 1.2em;
-		}
+@media only screen and (min-width: 991px) {
+	.sub_menu button {
+		min-width: 212px !important;
+		font-size: 1.2em;
 	}
 }

@@ -42,11 +42,11 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-}
 
-.certi-logo img {
-	display: block;
-	max-width: 100%;
+	img {
+		display: block;
+		max-width: 100%;
+	}
 }
 
 .certi-icon {
@@ -85,7 +85,7 @@
 
 .certi-id {
 	font-size: 0.91em;
-	color: rgb(169, 169, 169);
+	color: #a9a9a9;
 }
 
 .values-icon-box {
