@@ -1,21 +1,36 @@
-//Assets
+//Projects
 import Pym from "../assets/img/projects/pym.webp";
 import TheMask from "../assets/img/projects/the_mask.webp";
-
-import Technical from "../assets/img/icons/creativity_icon.webp";
-import Management from "../assets/img/icons/advertising_icon.webp";
-import Others from "../assets/img/icons/web_design_icon.webp";
-import Google from "../assets/img/certifications/digital-active.webp";
-import React from "../assets/img/certifications/react.webp";
-import ReactNative from "../assets/img/certifications/react-native.webp";
-
 import ProjectPym from "../assets/img/projects/proj_pym.webp";
 import ProjectTheMask from "../assets/img/projects/proj_mask.webp";
 import ProjectJarvis from "../assets/img/projects/proj_jarvis.webp";
 
+//Icons
+import Technical from "../assets/img/icons/creativity_icon.webp";
+import Management from "../assets/img/icons/advertising_icon.webp";
+import Others from "../assets/img/icons/web_design_icon.webp";
+
+//Certifications
+import CertGoogle from "../assets/img/certifications/digital-active.webp";
+import CertReact from "../assets/img/certifications/react.webp";
+import CertReactNative from "../assets/img/certifications/react-native.webp";
+
+//Profile
 import Harry from "../assets/img/profile/harry.webp";
 import Kirthy from "../assets/img/profile/kirthy.webp";
+
+//Technologies
+import React from "../assets/img/technologies/react.webp";
+import Redux from "../assets/img/technologies/redux.webp";
+import Bootstrap from "../assets/img/technologies/bootstrap.webp";
+import Sass from "../assets/img/technologies/sass.webp";
+import Mercure from "../assets/img/technologies/mercure.webp";
+import Axios from "../assets/img/technologies/axios.webp";
+
+//Free
 import Free from "../assets/img/free/BGDefault.webp";
+
+//Others
 import Team from "../assets/img/others/team.webp";
 import ESD from "../assets/img/others/esd.webp";
 
@@ -343,21 +358,21 @@ export const Formations = [
 export const Certifications = [
 	{
 		id: 0,
-		img: Google,
+		img: CertGoogle,
 		title: "Certification Google Digital Active",
 		issuer: "Google",
 		date: "2017",
 	},
 	{
 		id: 1,
-		img: React,
+		img: CertReact,
 		title: "React - The Complete Guide",
 		issuer: "Udemy",
 		date: "2019",
 	},
 	{
 		id: 2,
-		img: ReactNative,
+		img: CertReactNative,
 		title: "React Native - The Practical Guide",
 		issuer: "Udemy",
 		date: "2020",
@@ -450,6 +465,51 @@ export const ProjectsDetails = [
 		title: "Jarvis",
 		description:
 			"Jarvis est un outil de ticketing et d'administration pour les entités de F Distribution. Il permet de centraliser toutes les demandes réalisées à ces dernières afin d'en simplifier la résolution et de permettre un gain de temps considérable.",
+	},
+];
+
+export const Technologies = [
+	{
+		id: 0,
+		img: React,
+		title: "React",
+		description:
+			"React est une bibliothèque JavaScript développée par Facebook depuis 2013. Son but principal est de faciliter la création de sites web, via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état. C'est un langage très populaire qui voit son taux d'utilisation continuellement grimper.",
+	},
+	{
+		id: 1,
+		img: Redux,
+		title: "Redux",
+		description:
+			"Redux est une bibliothèque JavaScript parue en 2015 qui a pour but d'apporter une meilleure gestion des états (state) que ne le propose React de base. Elle permet notamment de mettre en place un état global qu'il devient beaucoup plus facile de modifier.",
+	},
+	{
+		id: 2,
+		img: Bootstrap,
+		title: "Bootstrap",
+		description:
+			"Bootstrap est une collection de style et de classes permettant de mettre en place assez facilement un design. Il contient des styles pré-définis de boutons, formulaires, etc. (qui peuvent toutefois être adaptés) qui s'appellent avec une classe directement depuis le code HTML.",
+	},
+	{
+		id: 3,
+		img: Sass,
+		title: "Sass",
+		description:
+			"Le Sass est un langage dynamique de génération de feuilles de style en cascade (CSS). C'est un langage compilé qui permet d'écrire son style directement en Sass mais qui octroie des fonctionnalités supplémentaires telles que la déclaration de variables ou l'utilisation de la syntaxe SCSS.",
+	},
+	{
+		id: 4,
+		img: Mercure,
+		title: "Mercure",
+		description:
+			"Mercure est un protocole ouvert pour les communications en temps réel conçu pour être rapide, fiable et efficace. C'est un remplacement moderne et pratique de l'API Websocket et des bibliothèques et services de haut niveau qui en dépendent.",
+	},
+	{
+		id: 5,
+		img: Axios,
+		title: "Axios",
+		description:
+			"Axios est un client HTTP pour JavaScript basé sur les 'promesses' qui permet de faire le parallèle entre le back et le front. En utilisant Axios, il est facile d'envoyer des requêtes HTTP asynchrones aux terminaux REST et d'effectuer des opérations CRUD.",
 	},
 ];
 

@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 
 //Reactstrap Components
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 //Components
 import DownloadCV from "../../components/DownloadCV";
-
-//Assets
-import logoFD from "../../assets/img/free/fd_white.webp";
-import Pym from "../../assets/img/projects/pym.webp";
-import TheMask from "../../assets/img/projects/the_mask.webp";
+import Card from "./components/Card";
 
 export default function PageHome({ returnPage }) {
 	const [seeMore, setSeeMore] = useState(false);
@@ -20,68 +16,7 @@ export default function PageHome({ returnPage }) {
 				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 					<div className='home-content with-photo'>
 						<Row className='flex-v-align flex-direction-reverse'>
-							<Col sm='7' className='d-none d-md-block'>
-								<div className='card-container'>
-									<Container fluid className={`${seeMore ? "hover" : ""}`}>
-										<div className='card'>
-											<div className='front'>
-												<div className='top'>
-													<div className='logo'>
-														<img src={logoFD} alt='Logo FD' />
-													</div>
-												</div>
-												<div className='bottom'>
-													<div className='content'>
-														<div className='name'>Romain Soubrane</div>
-														<div className='introduction'>Développeur Web</div>
-													</div>
-												</div>
-											</div>
-											<div className='back'>
-												<Row className='top-row'>
-													<img src={logoFD} alt='Logo Free' className='logo' />
-													<a href='https://free.fr' target='_noblank'>
-														<i className='fas fa-globe-europe'></i>
-													</a>
-												</Row>
-
-												<Row className='middle-row'>
-													<h3> "Il a Free, il a tout compris !" </h3>
-												</Row>
-
-												<Row className='bottom-row'>
-													<div className='details'>
-														<div>
-															<span className='fa fa-calendar-alt'></span>
-															Novembre 2019 - Septembre 2020
-														</div>
-														<div>
-															<span className='fa fa-map-marker-alt'></span>
-															Siège Social - 8 Rue de la ville-L'Évêque, 75008 Paris
-														</div>
-														<div>
-															<div className='missions d-inline-flex'>
-																<a href='/#' onClick={() => returnPage(4)}>
-																	<img src={TheMask} alt='TheMask' />
-																</a>
-																<a href='/#' onClick={() => returnPage(4)}>
-																	Jarvis
-																</a>
-																<a href='/#' onClick={() => returnPage(4)}>
-																	<img src={Pym} alt='Pym' />
-																</a>
-															</div>
-														</div>
-													</div>
-												</Row>
-											</div>
-										</div>
-									</Container>
-								</div>
-							</Col>
-							<Col xs='12' className='my-3 d-md-none'>
-								<img src={logoFD} alt='Logo FD' />
-							</Col>
+							<Card seeMore={seeMore} returnPage={returnPage} />
 							<Col xs='12' md='5'>
 								<div className='home-text'>
 									<h1>Rapport d'Alternance</h1>
