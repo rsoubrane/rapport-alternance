@@ -1,6 +1,7 @@
 import React from "react";
 
 //Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Zoom from "react-reveal/Zoom";
 
 //Reactstrap Components
@@ -26,7 +27,7 @@ export default function KeyPoints({ title, data }) {
 								<Col xs='12' sm='6' md={`${data.length > 3 ? "3" : "4"}`} key={x.id}>
 									<Zoom delay={returnDelay(x.id)}>
 										<div className='lm-info-block gray-default'>
-											<i className={`fa fa-${x.icon}`}></i>
+											<FontAwesomeIcon icon={x.icon} />
 											<h4>{x.title}</h4>
 											<span className='lm-info-block-value'>{x.value}</span>
 											<span className='lm-info-block-text'></span>

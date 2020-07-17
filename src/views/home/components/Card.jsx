@@ -1,5 +1,9 @@
 import React from "react";
 
+//Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobeEurope, faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 //Reactstrap Components
 import { Container, Row, Col } from "reactstrap";
 
@@ -32,7 +36,7 @@ export default function Card({ seeMore, returnPage }) {
 								<Row className='top-row'>
 									<img src={logoFD} alt='Logo Free' className='logo' />
 									<a href='https://free.fr' target='_noblank' aria-label='Free'>
-										<i className='fas fa-globe-europe'></i>
+										<FontAwesomeIcon icon={faGlobeEurope} />
 									</a>
 								</Row>
 
@@ -43,12 +47,12 @@ export default function Card({ seeMore, returnPage }) {
 								<Row className='bottom-row'>
 									<div className='details'>
 										<div>
-											<span className='fa fa-calendar-alt'></span>
-											Novembre 2019 - Septembre 2020
+											<FontAwesomeIcon icon={faCalendarAlt} className='mr-2' /> Novembre 2019 -
+											Septembre 2020
 										</div>
 										<div>
-											<span className='fa fa-map-marker-alt'></span>
-											Siège Social - 8 Rue de la ville-L'Évêque, 75008 Paris
+											<FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' /> Siège Social - 8
+											Rue de la ville-L'Évêque, 75008 Paris
 										</div>
 										<div>
 											<div className='missions d-inline-flex'>

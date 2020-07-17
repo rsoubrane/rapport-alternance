@@ -1,5 +1,9 @@
 import React from "react";
 
+//Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
 //Reactstrap Components
 import { Row, Col, Modal, ModalBody } from "reactstrap";
 
@@ -33,7 +37,7 @@ export default function Details({ isOpen, closeModal }) {
 							<nav className='details-page-nav'>
 								<div className='nav-item'>
 									<a href='/#' onClick={closeModal}>
-										<i className='fa fa-times'></i>
+										<FontAwesomeIcon icon={faTimes} />
 									</a>
 								</div>
 							</nav>

@@ -1,6 +1,7 @@
 import React from "react";
 
 //Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Bounce from "react-reveal/Bounce";
 
 //Reactstrap Components
@@ -27,7 +28,7 @@ export default function Objectives({ title, data }) {
 										<div className='info-list-w-icon'>
 											<div className='info-block-w-icon'>
 												<div className='ci-icon'>
-													<i className={`fas fa-${x.icon}`}></i>
+													<FontAwesomeIcon icon={x.icon} />
 												</div>
 												<div className='ci-text'>
 													<h4>{x.title}</h4>

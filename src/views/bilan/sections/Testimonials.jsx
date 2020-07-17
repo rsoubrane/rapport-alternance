@@ -1,5 +1,9 @@
 import React from "react";
 
+//Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+
 //Components
 import BlockTitle from "../../../components/Utils/BlockTitle";
 import { Row, Col } from "reactstrap";
@@ -33,11 +37,11 @@ export default function Testimonials() {
 											</div>
 
 											<div className='testimonial-icon'>
-												<i className='fa fa-quote-left'></i>
+												<FontAwesomeIcon icon={faQuoteLeft} />
 											</div>
 
 											<div className='testimonial-icon-big'>
-												<i className='fa fa-quote-right'></i>
+												<FontAwesomeIcon icon={faQuoteRight} />
 											</div>
 										</div>
 									</div>

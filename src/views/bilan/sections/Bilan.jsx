@@ -2,6 +2,8 @@ import React from "react";
 
 //Utils
 import Zoom from "react-reveal/Zoom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 //Components
 import BlockTitle from "../../../components/Utils/BlockTitle";
@@ -34,15 +36,15 @@ export default function Bilan() {
 						</p>
 						<ul>
 							<li>
-								<i className='fa fa-check'></i> Fier d'avoir pu travailler pour un grand groupe sur des
-								projets diversifiés !
+								<FontAwesomeIcon icon={faCheck} /> Fier d'avoir pu travailler pour un grand groupe sur
+								des projets diversifiés !
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Développement de 3 jolis outils utiles à toutes les
+								<FontAwesomeIcon icon={faCheck} /> Développement de 3 jolis outils utiles à toutes les
 								entités de F Distribution.
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Aucun retard de deadline !
+								<FontAwesomeIcon icon={faCheck} /> Aucun retard de deadline !
 							</li>
 						</ul>
 					</Col>
@@ -87,14 +89,15 @@ export default function Bilan() {
 						</p>
 						<ul>
 							<li>
-								<i className='fa fa-check'></i> Amélioration de ma syntaxe React et découverte de
+								<FontAwesomeIcon icon={faCheck} /> Amélioration de ma syntaxe React et découverte de
 								nouvelles librairies (Redux/Mercure)
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Amélioration de mes compétences en design
+								<FontAwesomeIcon icon={faCheck} /> Amélioration de mes compétences en design
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Meilleure compréhension des enjeux d'un projet technique
+								<FontAwesomeIcon icon={faCheck} /> Meilleure compréhension des enjeux d'un projet
+								technique
 							</li>
 						</ul>
 					</Col>
@@ -144,15 +147,15 @@ export default function Bilan() {
 						</p>
 						<ul>
 							<li>
-								<i className='fa fa-check'></i> Le développement est un domaine qui me plaît !
+								<FontAwesomeIcon icon={faCheck} /> Le développement est un domaine qui me plaît !
 							</li>
 							<li>
-								<i className='fa fa-check'></i> C'est un monde très vaste et il me reste encore beaucoup
-								à découvrir et apprendre.
+								<FontAwesomeIcon icon={faCheck} /> C'est un monde très vaste et il me reste encore
+								beaucoup à découvrir et apprendre.
 							</li>
 							<li>
-								<i className='fa fa-check'></i> Je suis vraiment motivé à continuer de m'améliorer et à
-								monter en compétences (surtout sur la partie back-end)
+								<FontAwesomeIcon icon={faCheck} /> Je suis vraiment motivé à continuer de m'améliorer et
+								à monter en compétences (surtout sur la partie back-end)
 							</li>
 						</ul>
 						<p>

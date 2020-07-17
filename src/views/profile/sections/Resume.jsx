@@ -94,7 +94,7 @@ export default function TabResume() {
 				<Row>
 					<Col xs='12'>
 						<div className='block'>
-							<div className='center download-resume mt-3 mt-md-5'>
+							<div className='text-center download-resume mt-3 mt-md-5'>
 								<DownloadCV />
 							</div>
 						</div>

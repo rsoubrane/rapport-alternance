@@ -1,6 +1,7 @@
 import React from "react";
 
 //Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Zoom from "react-reveal/Zoom";
 
 //Reactstrap Components
@@ -65,10 +66,11 @@ export default function Values({ title, data }) {
 													width='100'
 													height='100'
 													viewBox='0 0 600 600'
-													xmlns='http://www.w3.org/2000/svg'>
+													xmlns='http://www.w3.org/2000/svg'
+													className='icon-box'>
 													{switchIconBox(x.color)}
 												</svg>
-												<i className={`fas fa-${x.icon}`}></i>
+												<FontAwesomeIcon icon={x.icon} className='font-icon' />
 											</div>
 											<h4>{x.title}</h4>
 											<p>{x.description}</p>

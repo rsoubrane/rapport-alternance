@@ -60,7 +60,7 @@
 	border-bottom-left-radius: 6px;
 	text-align: center;
 
-	i {
+	svg {
 		color: #007ced;
 		font-size: 42px;
 	}
@@ -108,13 +108,13 @@
 		transition: ease-in-out 0.3s;
 		position: relative;
 
-		i {
+		.font-icon {
 			font-size: 36px;
 			transition: 0.5s;
 			position: relative;
 		}
 
-		svg {
+		.icon-box {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -150,13 +150,17 @@
 }
 
 .iconbox-blue {
-	i {
+	svg {
 		color: #47aeff;
 	}
 
 	&:hover .icon {
-		i {
-			color: #fff;
+		.font-icon {
+			color: #fff !important;
+
+			path {
+				fill: #fff !important;
+			}
 		}
 
 		path {
@@ -166,13 +170,17 @@
 }
 
 .iconbox-orange {
-	i {
+	svg {
 		color: #ffa76e;
 	}
 
 	&:hover .icon {
-		i {
-			color: #fff;
+		.font-icon {
+			color: #fff !important;
+
+			path {
+				fill: #fff !important;
+			}
 		}
 
 		path {
@@ -182,13 +190,17 @@
 }
 
 .iconbox-pink {
-	i {
+	svg {
 		color: #e80368;
 	}
 
 	&:hover .icon {
-		i {
-			color: #fff;
+		.font-icon {
+			color: #fff !important;
+
+			path {
+				fill: #fff !important;
+			}
 		}
 
 		path {
@@ -198,15 +210,18 @@
 }
 
 .iconbox-yellow {
-	i {
+	svg {
 		color: #ffbb2c;
 	}
 
 	&:hover .icon {
-		i {
-			color: #fff;
-		}
+		.font-icon {
+			color: #fff !important;
 
+			path {
+				fill: #fff;
+			}
+		}
 		path {
 			fill: #ffbb2c;
 		}

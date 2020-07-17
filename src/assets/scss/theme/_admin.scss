@@ -252,7 +252,7 @@ ul.social-links {
 		}
 	}
 
-	i {
+	svg {
 		position: relative;
 		display: table-cell;
 		font-size: 33px;
@@ -305,7 +305,7 @@ ul.social-links {
 		margin: 15px;
 	}
 
-	i {
+	svg {
 		position: relative;
 		font-size: 33px;
 		color: #7066ff;
@@ -897,8 +897,8 @@ h6 {
 
 .block-title h3 span,
 .entry-title a:hover,
-.info-block-w-icon i,
-.lm-info-block i,
+.info-block-w-icon svg,
+.lm-info-block svg,
 .site-title span {
 	color: #007ced;
 }
@@ -1372,8 +1372,12 @@ ul.social-links {
 				color: #fff;
 			}
 
-			i {
-				line-height: 40px;
+			svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -75%);
+				line-height: 22px;
 				font-size: 22px;
 			}
 		}

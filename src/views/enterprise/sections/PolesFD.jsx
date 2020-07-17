@@ -1,6 +1,7 @@
 import React from "react";
 
 //Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
 //Reactstrap Components
@@ -21,7 +22,7 @@ export default function PolesFD({ title, data }) {
 							<Col xs='12' md='4' className='h-100' key={pole.id}>
 								<div className='certificate-item clearfix'>
 									<div className='certi-icon'>
-										<i className={`fa fa-${pole.icon}`}></i>
+										<FontAwesomeIcon icon={pole.icon} />
 									</div>
 									<div className='certi-content'>
 										<div className='certi-title'>

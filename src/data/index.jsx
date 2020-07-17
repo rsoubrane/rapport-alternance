@@ -1,3 +1,27 @@
+//FaIcons
+import {
+	faEuroSign,
+	faUsers,
+	faPhone,
+	faStoreAlt,
+	faUserFriends,
+	faHome,
+	faMobile,
+	faStore,
+	faMap,
+	faHandsHelping,
+	faCogs,
+	faDesktop,
+	faStopwatch,
+	faPeopleCarry,
+	faUserCheck,
+	faLightbulb,
+	faTasks,
+	faClock,
+	faCoffee,
+	faLaptopCode,
+} from "@fortawesome/free-solid-svg-icons";
+
 //Projects
 import Pym from "../assets/img/projects/pym.webp";
 import TheMask from "../assets/img/projects/the_mask.webp";
@@ -38,25 +62,25 @@ export const KeyFiguresEnterprise = [
 	{
 		id: 0,
 		title: "Chiffre d'affaires 2019",
-		icon: "euro-sign",
+		icon: faEuroSign,
 		value: "5.3G",
 	},
 	{
 		id: 1,
 		title: "Employés",
-		icon: "users",
+		icon: faUsers,
 		value: "+11.000",
 	},
 	{
 		id: 2,
 		title: "Abonnés Mobile",
-		icon: "mobile",
+		icon: faMobile,
 		value: "13.5M",
 	},
 	{
 		id: 3,
 		title: "Abonnés Fixe",
-		icon: "phone",
+		icon: faPhone,
 		value: "6.5M",
 	},
 ];
@@ -65,19 +89,19 @@ export const KeyFiguresFD = [
 	{
 		id: 0,
 		title: "Free Centers",
-		icon: "store-alt",
+		icon: faStoreAlt,
 		value: "91",
 	},
 	{
 		id: 1,
 		title: "Employés",
-		icon: "users",
+		icon: faUsers,
 		value: "+750",
 	},
 	{
 		id: 2,
 		title: "Poles",
-		icon: "user-friends",
+		icon: faUserFriends,
 		value: "3",
 	},
 ];
@@ -124,7 +148,7 @@ export const TimelineEnterprise = [
 export const ObjectivesIliad = [
 	{
 		id: 0,
-		icon: "home",
+		icon: faHome,
 		title: "Le fixe",
 		description: [
 			{ id: 1, text: "Part de marché Haut Débit et Très Haut Débit de 25%" },
@@ -133,7 +157,7 @@ export const ObjectivesIliad = [
 	},
 	{
 		id: 1,
-		icon: "mobile",
+		icon: faMobile,
 		title: "Le mobile",
 		description: [
 			{ id: 0, text: "Part de marché mobile de 25%" },
@@ -143,7 +167,7 @@ export const ObjectivesIliad = [
 	},
 	{
 		id: 2,
-		icon: "store",
+		icon: faStore,
 		title: "Le B2B",
 		description: [
 			{ id: 0, text: "5% de part de marché sur le marché des entreprises d’environ en 2024" },
@@ -152,7 +176,7 @@ export const ObjectivesIliad = [
 	},
 	{
 		id: 3,
-		icon: "map",
+		icon: faMap,
 		title: "Italie",
 		description: [
 			{ id: 0, text: "Environ 5 000 sites activés à fin 2020" },
@@ -185,19 +209,19 @@ export const ObjectivesFD = [
 export const PolesFD = [
 	{
 		id: 0,
-		icon: "hands-helping",
+		icon: faHandsHelping,
 		title: "Vente et opérations",
 		description: "Gestion des Free Centers (boutiques Free), des coachs et managers de ces FC.",
 	},
 	{
 		id: 1,
-		icon: "cogs",
+		icon: faCogs,
 		title: "Déploiement et maintenance",
 		description: "Gestion de l'ouverture et maintenance de toutes les Free Centers de France",
 	},
 	{
 		id: 2,
-		icon: "desktop",
+		icon: faDesktop,
 		title: "Recherche & développement",
 		description: "Gestion de toutes les foncions supports, R&D (mon pôle), RH, etc.",
 	},
@@ -207,28 +231,28 @@ export const ValuesFree = [
 	{
 		id: 0,
 		color: "blue",
-		icon: "stopwatch",
+		icon: faStopwatch,
 		title: "Flexibilité",
 		description: "Souple, Agile, Réactif",
 	},
 	{
 		id: 1,
 		color: "orange",
-		icon: "people-carry",
+		icon: faPeopleCarry,
 		title: "Efficacité",
 		description: "Objectifs, Réussite de l'équipe",
 	},
 	{
 		id: 2,
 		color: "pink",
-		icon: "user-check",
+		icon: faUserCheck,
 		title: "Autonomie",
 		description: "Initiatives, Prise de décision, Confiance",
 	},
 	{
 		id: 3,
 		color: "yellow",
-		icon: "lightbulb",
+		icon: faLightbulb,
 		title: "Audace",
 		description: "Prise de risque, Innovation",
 	},
@@ -238,25 +262,25 @@ export const FunFacts = [
 	{
 		id: 0,
 		title: "Projets",
-		icon: "tasks",
+		icon: faTasks,
 		value: 3,
 	},
 	{
 		id: 1,
 		title: "Heures de travail",
-		icon: "clock",
+		icon: faClock,
 		value: "1.350",
 	},
 	{
 		id: 2,
 		title: "Cafés consommés",
-		icon: "coffee",
+		icon: faCoffee,
 		value: "1.475",
 	},
 	{
 		id: 3,
 		title: "Lignes de code",
-		icon: "laptop-code",
+		icon: faLaptopCode,
 		value: "37.912",
 	},
 ];

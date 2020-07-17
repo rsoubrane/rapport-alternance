@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+//Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 //Reactstrap Components
 import { Row, Col } from "reactstrap";
 
@@ -50,9 +54,9 @@ export default function PageHome({ returnPage }) {
 
 						<Col xs='12' className='my-3'>
 							<div className='details text-center'>
-								<i className='fa fa-calendar-alt mr-2'></i> Novembre 2019 - Septembre 2020
-								<i className='fa fa-map-marker-alt mr-2'></i> Siège Social - 8 Rue de la ville-L'Évêque,
-								75008 Paris
+								<FontAwesomeIcon icon={faCalendarAlt} className='mr-2' /> Novembre 2019 - Septembre 2020
+								<FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' /> Siège Social - 8 Rue de la
+								ville-L'Évêque, 75008 Paris
 							</div>
 						</Col>
 

@@ -1,5 +1,9 @@
 import React from "react";
 
+//Utils
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 //Reactstrap Components
 import { Row, Col } from "reactstrap";
 
@@ -30,14 +34,14 @@ export default function TabSummary() {
 						</div>
 
 						<div className='social-links'>
-							<a href='https://twitter.com/EpticRS'>
-								<i className='fab fa-twitter' target='_blank' rel='noopener noreferrer'></i>
+							<a href='https://twitter.com/EpticRS' target='_blank' rel='noopener noreferrer'>
+								<FontAwesomeIcon icon={faTwitter} />
 							</a>
-							<a href='https://linkedin.com/in/rsoubrane'>
-								<i className='fab fa-linkedin' target='_blank' rel='noopener noreferrer'></i>
+							<a href='https://linkedin.com/in/rsoubrane' target='_blank' rel='noopener noreferrer'>
+								<FontAwesomeIcon icon={faLinkedin} />
 							</a>
-							<a href='https://instagram.com/rsoubrane'>
-								<i className='fab fa-instagram' target='_blank' rel='noopener noreferrer'></i>
+							<a href='https://instagram.com/rsoubrane' target='_blank' rel='noopener noreferrer'>
+								<FontAwesomeIcon icon={faInstagram} />
 							</a>
 						</div>
 					</Col>

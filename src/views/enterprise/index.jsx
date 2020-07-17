@@ -52,7 +52,7 @@ export default function PageEnterprise({ returnPage }) {
 		<>
 			<Details isOpen={isModalOpen} closeModal={handleModal} />
 
-			<article className='page type-page pt-page-rotateCarouselLeftIn'>
+			<article className='page type-page pt-page-scaleUpCenter'>
 				<div className='entry-content'>
 					<div className='fw-page-builder-content'>
 						<HeaderEnterprise returnClick={handleModal} />

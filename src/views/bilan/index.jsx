@@ -10,7 +10,7 @@ import HeaderBilan from "./components/Header";
 
 export default function PageBilan() {
 	return (
-		<article className='page type-page pt-page-flipInLeft'>
+		<article className='page type-page pt-page-flipInBottom'>
 			<div className='entry-content'>
 				<HeaderBilan />
 
