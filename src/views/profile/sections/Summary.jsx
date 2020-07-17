@@ -10,7 +10,7 @@ import BlockTitle from "../../../components/Utils/BlockTitle";
 import Profile from "../../../assets/img/profile/romain.webp";
 
 //Data
-import { Abilities } from "../../../variables";
+import { Abilities } from "../../../data";
 
 export default function TabSummary() {
 	return (
@@ -49,7 +49,7 @@ export default function TabSummary() {
 					<Col xs='12' md='7'>
 						<div className='about-me'>
 							<BlockTitle title='À propos de moi' marginTop={0} />
-							<p>
+							<p className='text-justify'>
 								Passioné de digital, je suis un développeur web spécialisé en React et Node. Dans le
 								cadre de ma formation a l'
 								<a href='https://ecole-du-digital.com' target='_blank' rel='noopener noreferrer'>
@@ -94,6 +94,7 @@ export default function TabSummary() {
 
 					{Abilities
 						? Abilities.map((skill) => {
+								console.log("skill: ", skill);
 								return (
 									<Col xs='12' md='4' className='mt-3 mt-md-0' key={skill.id}>
 										<div className='service-block'>

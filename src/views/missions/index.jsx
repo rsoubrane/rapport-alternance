@@ -10,7 +10,7 @@ import Projects from "./sections/Projects";
 import Technologies from "./sections/Technologies";
 
 //Data
-import { FunFacts as MyFunFacts, ProjectsDetails, Technologies as MyTechnologies } from "../../variables";
+import { FunFacts as MyFunFacts, ProjectsDetails, Technologies as MyTechnologies } from "../../data";
 
 export default function PageMissions() {
 	return (

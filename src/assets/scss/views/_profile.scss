@@ -9,7 +9,7 @@ $ease: cubic-bezier(0.2, 1, 0.3, 1);
 	height: 100%;
 	width: 100vw;
 	left: -55px;
-	margin: 0 auto -60px;
+	margin: 10px auto -60px;
 	-webkit-perspective: 1500px;
 	-moz-perspective: 1500px;
 	perspective: 1500px;
@@ -461,9 +461,9 @@ $ease: cubic-bezier(0.2, 1, 0.3, 1);
 
 .switch-page {
 	position: absolute;
-	top: 8%;
-	width: 90px;
-	height: 90px;
+	top: 3%;
+	width: 70px;
+	height: 70px;
 	border: 2px solid white;
 	border-radius: 100%;
 	text-align: center;
@@ -475,31 +475,31 @@ $ease: cubic-bezier(0.2, 1, 0.3, 1);
 	}
 
 	&.left {
-		left: 0;
-		transform: translate(-50%, -50%);
+		left: 3%;
+		transform: translate(-3%, -50%);
 
 		svg {
 			position: absolute;
 			top: 50%;
 			right: 50%;
-			transform: translate(100%, -50%);
+			transform: translate(125%, -50%);
 		}
 	}
 	&.right {
-		right: 0;
-		transform: translate(50%, -50%);
+		right: 3%;
+		transform: translate(3%, -50%);
 
 		svg {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-100%, -50%);
+			transform: translate(-125%, -50%);
 		}
 	}
 
 	svg {
 		color: white !important;
-		width: 50px;
+		width: 40px;
 		height: auto;
 		position: absolute;
 		top: 50%;
@@ -565,6 +565,33 @@ $ease: cubic-bezier(0.2, 1, 0.3, 1);
 
 		.page-content {
 			border-radius: 0 0 30px 30px;
+		}
+	}
+	.switch-page {
+		top: 5% !important;
+		width: 90px !important;
+		height: 90px !important;
+
+		&.left {
+			left: 0 !important;
+			transform: translate(-50%, -50%) !important;
+
+			svg {
+				transform: translate(100%, -50%) !important;
+			}
+		}
+
+		&.right {
+			right: 0 !important;
+			transform: translate(50%, -50%) !important;
+
+			svg {
+				transform: translate(-100%, -50%) !important;
+			}
+		}
+
+		svg {
+			width: 50px !important;
 		}
 	}
 }

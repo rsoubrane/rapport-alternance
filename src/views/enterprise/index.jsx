@@ -4,13 +4,7 @@ import React, { useState } from "react";
 import { Row, ButtonGroup, Button } from "reactstrap";
 
 //Data
-import {
-	KeyFiguresEnterprise,
-	TimelineEnterprise,
-	ObjectivesIliad,
-	ValuesFree,
-	PolesFD as Poles,
-} from "../../variables";
+import { KeyFiguresEnterprise, TimelineEnterprise, ObjectivesIliad, ValuesFree, PolesFD as Poles } from "../../data";
 
 //Tabs
 import KeyPoints from "./tabs/KeyPoints";

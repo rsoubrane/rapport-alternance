@@ -5,7 +5,7 @@ import BlockTitle from "../../../components/Utils/BlockTitle";
 import { Row, Col } from "reactstrap";
 
 //Data
-import { Testimonials as MyTestimonials } from "../../../variables";
+import { Testimonials as MyTestimonials } from "../../../data";
 
 export default function Testimonials() {
 	return (
@@ -24,7 +24,7 @@ export default function Testimonials() {
 											</div>
 
 											<div className='testimonial-text'>
-												<p>{testimonial.testimony}</p>
+												<p className='text-justify'>{testimonial.testimony}</p>
 											</div>
 
 											<div className='testimonial-author-info'>

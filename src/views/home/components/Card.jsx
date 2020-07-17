@@ -70,9 +70,6 @@ export default function Card({ seeMore, returnPage }) {
 					</Container>
 				</div>
 			</Col>
-			<Col xs='12' className='my-3 d-md-none'>
-				<img src={logoFD} alt='Logo FD' />
-			</Col>
 		</>
 	);
 }

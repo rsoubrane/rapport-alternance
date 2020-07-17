@@ -7,7 +7,7 @@ import ProjectJarvis from "../assets/img/projects/proj_jarvis.webp";
 
 //Icons
 import Technical from "../assets/img/icons/creativity_icon.webp";
-import Management from "../assets/img/icons/advertising_icon.webp";
+import IconManagement from "../assets/img/icons/advertising.webp";
 import Others from "../assets/img/icons/web_design_icon.webp";
 
 //Certifications
@@ -290,7 +290,7 @@ export const Abilities = [
 	},
 	{
 		id: 1,
-		img: Management,
+		img: IconManagement,
 		title: "Compétences Managériales",
 		descriptions: [
 			{
@@ -517,14 +517,16 @@ export const Technologies = [
 export const Testimonials = [
 	{
 		id: 0,
-		testimony: "Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.",
+		testimony:
+			"Une belle évolution dans le code de Romain qui témoigne d'une vraie motivation à évoluer et à en apprendre toujours plus.",
 		img: Harry,
 		name: "Harry Amram",
 		poste: "Lead Developer",
 	},
 	{
 		id: 1,
-		testimony: "Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.",
+		testimony:
+			"Romain a permi d'accélérer la vitesse de déploiement de nos outils et a formé un excellent duo avec Harry !",
 		img: Kirthy,
 		name: "Kirthy Anandout",
 		poste: "Responsable pôle R&D",

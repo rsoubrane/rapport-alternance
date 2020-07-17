@@ -10,7 +10,7 @@ import { Row, Col } from "reactstrap";
 import BlockTitle from "../../../components/Utils/BlockTitle";
 
 //Assets
-import Achievement from "../../../assets/img/illustrations/achievement_.svg";
+import Dev from "../../../assets/img/illustrations/it_support.svg";
 
 export default function Technologies({ title, data }) {
 	const returnDelay = (delay) => {
@@ -22,10 +22,10 @@ export default function Technologies({ title, data }) {
 			<BlockTitle title={title} />
 
 			<Row className='align-items-center justify-content-center mb-5'>
-				<Col xs='12' md='4' className='d-flex align-items-stretch'>
-					<img src={Achievement} className='img-fluid w-75' alt='Code' />
+				<Col xs='12' md='4' className='d-flex align-items-stretch text-center'>
+					<img src={Dev} className='img-fluid-75' alt='Code' />
 				</Col>
-				<Col xs='12' md='6' className='d-flex align-items-stretch'>
+				<Col xs='12' md='6' className='d-flex align-items-stretch mt-3 mt-md-0'>
 					<p className='text-justify'>
 						Bien que je ne sois autorisé à parler plus en détail (ou à montrer plus de visuels) des projets
 						sur lesquels j'ai pu travailler pour des raisons de confidentialité, je peux tout de même

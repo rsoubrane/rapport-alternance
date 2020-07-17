@@ -5,7 +5,7 @@ import { Row, Col } from "reactstrap";
 
 //Components
 import BlockTitle from "../../../components/Utils/BlockTitle";
-import { Acknowledgements as MyAcknowledgements } from "../../../variables";
+import { Acknowledgements as MyAcknowledgements } from "../../../data";
 
 export default function Acknowledgements() {
 	return (

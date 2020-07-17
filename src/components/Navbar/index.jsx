@@ -14,15 +14,13 @@ export default function Navbar({ currentPage, returnPage }) {
 	};
 
 	return (
-		<MyNavbar className='header' color='faded' dark expand='md'>
+		<MyNavbar className='header' dark expand='md'>
 			<div className='header-content'>
-				<NavbarBrand href='/' className='text-logo'>
-					<a href='/#' onClick={() => changePage(1)}>
-						<div className='logo-symbol'>RS</div>
-						<div className='logo-text'>
-							Romain <span>Soubrane</span>
-						</div>
-					</a>
+				<NavbarBrand href='/#' className='text-logo' onClick={() => changePage(1)}>
+					<div className='logo-symbol'>RS</div>
+					<div className='logo-text'>
+						Romain <span>Soubrane</span>
+					</div>
 				</NavbarBrand>
 				<NavbarToggler onClick={toggleNavbar} />
 				<Collapse isOpen={isOpen} navbar className='site-nav animate'>

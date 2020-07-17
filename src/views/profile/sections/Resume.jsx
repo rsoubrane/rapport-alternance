@@ -8,7 +8,7 @@ import BlockTitle from "../../../components/Utils/BlockTitle";
 import DownloadCV from "../../../components/DownloadCV";
 
 //Data
-import { Formations, Certifications, Experiences } from "../../../variables";
+import { Formations, Certifications, Experiences } from "../../../data";
 
 export default function TabResume() {
 	return (

@@ -7,6 +7,9 @@ import { Row, Col } from "reactstrap";
 import DownloadCV from "../../components/DownloadCV";
 import Card from "./components/Card";
 
+//Assets
+import logoFD from "../../assets/img/free/fd_white.webp";
+
 export default function PageHome({ returnPage }) {
 	const [seeMore, setSeeMore] = useState(false);
 
@@ -15,8 +18,7 @@ export default function PageHome({ returnPage }) {
 			<Col xs='12' sm='12'>
 				<div className='fw-col-inner' data-paddings='0px 0px 0px 0px'>
 					<div className='home-content with-photo'>
-						<Row className='flex-v-align flex-direction-reverse'>
-							<Card seeMore={seeMore} returnPage={returnPage} />
+						<Row className='flex-v-align'>
 							<Col xs='12' md='5'>
 								<div className='home-text'>
 									<h1>Rapport d'Alternance</h1>
@@ -38,6 +40,29 @@ export default function PageHome({ returnPage }) {
 										<DownloadCV />
 									</div>
 								</div>
+							</Col>
+							<Card seeMore={seeMore} returnPage={returnPage} />
+						</Row>
+
+						<Row className='d-md-none mt-5 align-items-center justify-content-center'>
+							<Col xs='12'>
+								<img src={logoFD} alt='Logo Free' className='logo' />
+							</Col>
+
+							<Col xs='12' className='my-3'>
+								<div className='details text-center'>
+									<div>
+										<i className='fa fa-calendar-alt mr-2'></i> Novembre 2019 - Septembre 2020
+									</div>
+									<div>
+										<i className='fa fa-map-marker-alt mr-2'></i> Siège Social - 8 Rue de la
+										ville-L'Évêque, 75008 Paris
+									</div>
+								</div>
+							</Col>
+
+							<Col xs='12' className='text-center'>
+								<h3 className='font-italic'> "Il a Free, il a tout compris !" </h3>
 							</Col>
 						</Row>
 					</div>
